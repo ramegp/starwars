@@ -1,0 +1,171 @@
+@import "../base/colors";
+
+@mixin fondoBaner() {
+    background: #333333;
+    background: -webkit-linear-gradient(to right, rgba(220, 24, 24, 0.63), rgba(51, 51, 51, 0.603)), url('../img/fondo/baner-halcon-milenario.jpg');
+    background: linear-gradient(to right, rgba(221, 24, 24, 0.651), rgba(51, 51, 51, 0.623)), url('../img/fondo/baner-halcon-milenario.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin displayAlignJustify($d, $a, $j) {
+    display: $d;
+    align-items: $a;
+    justify-content: $j;
+}
+
+@mixin width-heigth($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+
+
+@mixin cargarImagenPersonaje($url, $size) {
+    background-image: url($url);
+    background-size: $size;
+}
+
+/* ===================== Sables ======================== */
+
+@mixin colorSable($color-sable) {
+    box-shadow: 0 0 10px $color-sable, 0 0 20px $color-sable, 0 0 24px $color-sable;
+}
+
+@mixin ponerColoresSables() {
+    /* dentro del diccionario $colores-sables se encuentra el nombre de la clase del color del sable y su respectivo color */
+    @each $nombre-div, $color in $colores-sables {
+        .#{$nombre-div} {
+            @include colorSable($color);
+        }
+    };
+}
+
+@mixin ponerSables() {
+    .contenedor {
+        position: relative;
+        @include width-heigth(100%, 530px);
+        @include displayAlignJustify(flex, center, center);
+
+        .titulo {
+            position: absolute;
+            font-size: 6rem;
+            top: 0px;
+            opacity: 0;
+            color: white;
+
+            @media only screen and (max-width: 400px) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (min-width:401px) and (max-width: 960px) {
+                font-size: 3rem;
+            }
+        }
+
+        .contenedor-sable {
+            @include width-heigth(70px, 400px);
+            @include displayAlignJustify(flex, center, center);
+            margin: 0 40px;
+
+            .box {
+                position: absolute;
+                @include displayAlignJustify(flex, center, center);
+                flex-direction: column;
+            }
+
+            @media only screen and (max-width: 400px) {
+                @include width-heigth(19%, 332px);
+                margin: 0 -6px;
+            }
+
+            @media only screen and (min-width:401px) and (max-width: 960px) {
+                @include width-heigth(19%, 332px);
+                margin: 0 -6px;
+            }
+
+            .sable {
+                @include width-heigth(8px, 220px);
+                background: #fff;
+                border-radius: 7px 7px 0 0;
+                margin-left: -3px;
+                transition: .3s;
+                transform-origin: bottom;
+                transform: scale(0);
+
+                @media only screen and (max-width: 400px) {
+                    @include width-heigth(1.7%, 35%);
+                }
+
+                @media only screen and (min-width:401px) and (max-width: 960px) {
+                    @include width-heigth(.45rem, 13rem);
+                }
+            }
+
+            .mango {
+                @include width-heigth(33px, 150px);
+                top: 22em;
+                cursor: pointer;
+
+                img {
+                    @include width-heigth(100%, 100%);
+                }
+
+                @media only screen and (max-width: 400px) {
+                    @include width-heigth(7%, 18%);
+                }
+
+                @media only screen and (min-width:401px) and (max-width: 960px) {
+                    @include width-heigth(1.5rem, 6rem);
+                }
+            }
+
+        }
+
+
+
+
+
+    }
+
+
+
+}
+
+/* ==================== Fin Sables ======================== */
+
+/* ==================== PopUp ============================== */
+@mixin AnimacionPopUp-Nombre-Duracion-Delay-Fill-Timing($nombre-funcion, $duracion, $delay, $fill-mode, $timing-function){
+    animation-name: $nombre-funcion;
+    animation-duration: $duracion;
+    animation-fill-mode: $fill-mode;
+    animation-timing-function: $timing-function;
+    animation-delay: $delay;
+}
+@mixin popUpTablaPersonaje() {
+    text-align: center;
+    border: 1px solid rgb(179, 7, 7);
+    padding: 0.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@mixin overlayPopUpTitulo($size, $weight, $bottom, $opacity, $display, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    margin-bottom: $bottom;
+    opacity: $opacity;
+    display: $display;
+    color: $color;
+}
+
+/* ==================== Fin PopUp ========================= */
+
+/* =================== Linea Temporal ====================== */
+@mixin encabezadoTemporalFamilySizeColorBottom($family,$size,$color,$bottom) {
+    font-size: $size;
+    margin-bottom: $bottom;
+    font-family: $family;
+    color: $color;
+}   
+/* =================== Fin Linea Temporal ================= */

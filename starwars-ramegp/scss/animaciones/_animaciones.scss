@@ -1,0 +1,30 @@
+@keyframes modalEntra {
+	from {
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

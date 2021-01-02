@@ -1,0 +1,21 @@
+/*-------------------------------------------- Fonts ---------------------------------------------------------------------------------*/
+@font-face {
+	font-family: "Starjedi";
+	src: url("../fonts/starjedi/Starjedi.ttf");
+}
+@font-face {
+	font-family: "Starjediout";
+	src: url("../fonts/starjedi/Starjout.ttf");
+}
+@font-face {
+	font-family: "Aurebesh";
+	src: url("../fonts/aurebesh/AurebeshEnglishRegular-rjeO.ttf");
+}
+@font-face {
+	font-family: "Mandalorian";
+	src: url("../fonts/mandalore/MandaloreCondensed-rggz9.otf");
+}
+
+$font-jedi:"Starjedi";
+$font-aurebesh:"Aurebesh";
+$font-mandalorian:"Mandalorian";

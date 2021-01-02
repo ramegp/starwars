@@ -1,0 +1,159 @@
+@import "../base/mixin";
+@import "../animaciones/animaciones";
+@import "../base/imagenes";
+@import "../componentes/resumeSith";
+
+/* =========================== Frases de Personajes =============================*/
+.testimonials {
+	.testimonial-item {
+		box-sizing: content-box;
+		min-height: 320px;
+		margin: 0px 0px 10px 0px;
+		.testimonial-img {
+			width: 90px;
+			border-radius: 50%;
+			margin: -40px 0 0 40px;
+			position: relative;
+			z-index: 2;
+			border: 6px solid #fff;
+			box-shadow: 0px 14px 24px 6px rgba(0, 0, 0, 0.9);
+		}
+		h3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 16px 0 5px 45px;
+			color: #111;
+		}
+		h4 {
+			font-size: 14px;
+			color: #999;
+			margin: 0 0 0 45px;
+		}
+		p {
+			font-style: italic;
+			margin: 0 15px 0 15px;
+			padding: 20px 20px 60px 20px;
+			background: white;
+			position: relative;
+			border-radius: 6px;
+			z-index: 1;
+			box-shadow: 0px 0px 18px 14px rgba(0, 0, 0, 0.4);
+		}
+	}
+}
+/*============================ Fin Frases de Personajes =============================== */
+/* =========================== Creacion del Arbol de fotos ===================== */
+.item-arbol {
+    @include width-heigth(150px,150px);
+	overflow: hidden;
+	border: 4px solid #ecd8d8;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 8px black;
+	&:hover {
+		.informacion-personaje {
+			opacity: 1;
+		}
+    }
+    .informacion-personaje {
+        background-color: rgba(128, 128, 128, 0.486);
+        @include width-heigth(150px,150px);
+        @include displayAlignJustify(flex,center,center);
+        opacity: 0;
+        .nombre-personaje {
+            font-size: 1rem;
+            color: white;
+            input.btn2 {
+                background-color: rgba(230, 77, 77, 0.808);
+                @include width-heigth(auto,1.5rem);
+                border: none;
+                border-radius: 8px;
+                padding: 2px 4px;
+            }
+        }
+
+    }
+}
+/* =========================== Cargar Imagenes Del Arbol ================== */
+/* dentro del diccionario $personajes-url se encuentra el nombre del personaje con su respectiva ubicacion de la foto */
+@each $name-personaje, $url in $personajes-url {
+    .personaje#{$name-personaje} {
+        @include cargarImagenPersonaje($url,cover);
+    }
+}
+/* ============================= Fin cargar fotos */
+/* =================================== overlay ============================= */
+.overlay {
+    @include displayAlignJustify(none,center,center);
+	visibility: hidden;
+    transition: 1.3s linear all;
+    &.active {
+        display: flex;
+        visibility: visible;
+        @include AnimacionPopUp-Nombre-Duracion-Delay-Fill-Timing(modalEntra,1.6s,0s,forwards,linear);
+    }
+    .popup {
+        background: #ecd6d6ed;
+        box-shadow: 0px 0px 45px 30px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        text-align: center;
+        width: 60%;
+        transition: 1s linear all;
+        opacity: 0;
+        .btn-cerrar-popup {
+            font-size: 26px;
+            line-height: 16px;
+            display: block;
+            text-align: right;
+            transition: .8s ease all;
+            color: #8d8080;
+            cursor: pointer;
+            &:hover {
+                color: #000;
+            }
+        }
+        .overlay-popup-titulo {
+            @include overlayPopUpTitulo(36px,600,10px,0,block,black);
+        }
+        .overlay-popup-subtitulo {
+            @include overlayPopUpTitulo(26px,300,40px,0,block,black);
+        }
+        &.active {
+            opacity: 1;
+            .overlay-popup-titulo {
+                @include AnimacionPopUp-Nombre-Duracion-Delay-Fill-Timing(entradaTitulo,1.3s,1.6s,forwards,ease);
+            }
+            .overlay-popup-subtitulo {
+                @include AnimacionPopUp-Nombre-Duracion-Delay-Fill-Timing(entradaSubtitulo,1.3s,1.6s,forwards,ease);
+            }
+        }
+        .texto {
+            display: block;
+            float: left;
+            width: 79%;
+            margin-right: 10px;
+            text-align: justify;
+        }
+    }
+    
+}
+.tablaPersonaje {
+	border: 1px solid rgb(179, 7, 7);
+	border-spacing: 0px;
+    float: left;
+    tbody {
+        .tablaPersonaje-foto {
+            img {
+                @include width-heigth(200px,auto);
+            }
+        }
+        th {
+            @include popUpTablaPersonaje();
+        }
+        td {
+            @include popUpTablaPersonaje();
+        }
+    }	
+}
+/* =================================== Fin overlay ========================= */

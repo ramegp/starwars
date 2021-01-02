@@ -1,0 +1,20 @@
+@import "base/colors";
+@import "base/fonts";
+@import "base/mixin";
+
+@import "componentes/menuLateral";
+@import "componentes/baner";
+@import "componentes/accordion";
+@import "componentes/botonJuego";
+@import "componentes/titulosSecciones";
+
+@import "sections/sectionSith";
+@import "sections/sectionTecnologia";
+@import "sections/lineaTemporal";
+@import "sections/footer";
+
+main {
+	background: $bg-main;
+	display: block;
+}
+

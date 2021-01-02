@@ -1,0 +1,1989 @@
+/* Loader sable */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+#lightsaber .handle .buttplug,
+#lightsaber .handle .above-butt,
+#lightsaber .handle .other-gold-fuck:before,
+#lightsaber .handle .fin,
+#lightsaber .handle .fin:before {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #bfc0c0), color-stop(30%, #8c8d8d), color-stop(50%, #bfc0c0), color-stop(60%, #bfc0c0), color-stop(90%, #595a5a));
+    background: linear-gradient(to bottom, #bfc0c0 20%, #8c8d8d 30%, #bfc0c0 50%, #bfc0c0 60%, #595a5a 90%);
+    border: 0.0625em solid #595a5a;
+    border-radius: .125em;
+}
+
+#lightsaber .handle .butt,
+#lightsaber .handle .coily-shit {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #262727), color-stop(25%, #0d0d0d), color-stop(40%, #262727), color-stop(45%, #262727), color-stop(90%, #0d0d0d));
+    background: linear-gradient(to bottom, #262727 20%, #0d0d0d 25%, #262727 40%, #262727 45%, #0d0d0d 90%);
+    border: 0.0625em solid #0d0d0d;
+}
+
+body {
+    background: #141414;
+    min-width: 30em;
+    height: 100vh;
+    min-height: 8em;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #BFC0C0;
+    text-align: center;
+}
+
+#container {
+    padding: 1em 0;
+    width: 28em;
+    height: 5em;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -32px;
+}
+
+#loading span {
+    font-size: 0;
+}
+
+/* Cargar numero */
+#loading span:after {
+    font-size: 1rem;
+    font-size: 16px;
+    display: inline;
+    content: "0";
+    -webkit-animation: loadnumber 9s linear 1s;
+    animation: loadnumber 9s linear 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#lightsaber {
+    position: relative;
+    margin-bottom: 2em;
+    height: 1em;
+}
+
+#lightsaber>* {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+#lightsaber>*:before,
+#lightsaber>*:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#lightsaber * {
+    height: inherit;
+}
+
+#lightsaber .progress {
+    background: #242a34;
+    width: 100%;
+    left: 8.75em;
+    top: -1em;
+    bottom: -1em;
+    margin: auto;
+    height: 1.5em;
+    width: 19.25em;
+    border-radius: 0 .75em .75em 0;
+}
+
+/* Sable barra de carga */
+#lightsaber .progress .glow-shit {
+    width: 0;
+    left: -.3125em;
+    top: -1em;
+    bottom: -1em;
+    margin: auto;
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    box-shadow: inset -0.25em 0 0.25em 0.25em #c31111, 0 0 0.25em 0 #e71515, 0 0 1em 0.0625em rgba(151, 20, 20, 0.787);
+    height: .875em;
+    background: #fff;
+    border-radius: 0 .5em .5em 0;
+    -webkit-animation: growth 9s linear 1s;
+    animation: growth 9s linear 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+#lightsaber .handle>* {
+    position: absolute;
+    position: absolute;
+    bottom: -1em;
+    top: -1em;
+    margin: auto;
+}
+
+#lightsaber .handle>*:before,
+#lightsaber .handle>*:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#lightsaber .handle .buttplug {
+    width: 1em;
+}
+
+#lightsaber .handle .buttplug:before {
+    height: .375em;
+    width: .5em;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -.125em;
+    background: #f2f3f3;
+    border: 0.0625em solid #BFC0C0;
+    box-shadow: 0 0.875em 0 -0.0625em #f2f3f3, 0 0.875em 0 0 #BFC0C0;
+}
+
+#lightsaber .handle .butt {
+    width: 1.25em;
+    left: 1em;
+    border-radius: .125em;
+}
+
+#lightsaber .handle .butt:before {
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#595a5a), to(#262727));
+    background: linear-gradient(#595a5a 0%, #262727 100%);
+    border: 0.0625em solid #262727;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: 0 0 0 0.0625em #0d0d0d, 0 0.0625em 0 0.125em #0d0d0d;
+}
+
+#lightsaber .handle .butt:after {
+    width: .25em;
+    height: .25em;
+    background: #0d0d0d;
+    border-radius: 50%;
+    right: 0;
+    left: 0;
+    bottom: .125em;
+    margin: 0 auto;
+}
+
+#lightsaber .handle .above-butt {
+    left: 2.25em;
+    width: 1.25em;
+}
+
+#lightsaber .handle .above-butt:before {
+    width: inherit;
+    right: -.125em;
+    left: -.125em;
+    margin: auto;
+    height: .625em;
+    top: -.5em;
+    border: 0.0625em solid #BFC0C0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#595a5a), color-stop(75%, #bfc0c0));
+    background: linear-gradient(#595a5a 0%, #bfc0c0 75%);
+}
+
+#lightsaber .handle .coily-shit {
+    left: 3.5em;
+    width: 2.5em;
+    height: .875em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#262727), color-stop(10%, #262727), color-stop(50%, #0d0d0d), color-stop(85%, #262727), to(#0d0d0d));
+    background: linear-gradient(#262727 0%, #262727 10%, #0d0d0d 50%, #262727 85%, #0d0d0d 100%);
+}
+
+#lightsaber .handle .coily-shit:before,
+#lightsaber .handle .coily-shit:after {
+    height: 1.0625em;
+    bottom: -1em;
+    top: -1em;
+    margin: auto;
+}
+
+#lightsaber .handle .coily-shit:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(#262727), color-stop(50%, #0d0d0d));
+    background: linear-gradient(#262727 0%, #0d0d0d 50%);
+    width: .25em;
+    border-radius: 0 .25em .25em 0;
+    border: 0.0625em solid #0d0d0d;
+    left: -.0625em;
+}
+
+#lightsaber .handle .coily-shit:after {
+    width: .125em;
+    left: .25em;
+    box-shadow: 0.25em 0 0 0 #0d0d0d, 0.5em 0 0 0 #0d0d0d, 0.75em 0 0 0 #0d0d0d, 1em 0 0 0 #0d0d0d, 1.25em 0 0 0 #0d0d0d, 1.5em 0 0 0 #0d0d0d, 1.75em 0 0 0 #0d0d0d, 2em 0 0 0 #0d0d0d;
+    background: #0d0d0d;
+}
+
+#lightsaber .handle .gold-fuck {
+    border-top: 0.0625em solid #a47d3d;
+    border-bottom: 0.0625em solid #a47d3d;
+    width: .75em;
+    height: .625em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9dbc4), color-stop(10%, #e9dbc4), color-stop(50%, #a47d3d), color-stop(85%, #e9dbc4), to(#a47d3d));
+    background: linear-gradient(#e9dbc4 0%, #e9dbc4 10%, #a47d3d 50%, #e9dbc4 85%, #a47d3d 100%);
+    left: 6em;
+}
+
+#lightsaber .handle .gold-fuck:before {
+    width: .5em;
+    height: 1em;
+    left: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9dbc4), color-stop(10%, #e9dbc4), color-stop(50%, #a47d3d), color-stop(85%, #e9dbc4), to(#a47d3d));
+    background: linear-gradient(#e9dbc4 0%, #e9dbc4 10%, #a47d3d 50%, #e9dbc4 85%, #a47d3d 100%);
+    border: 0.0625em solid #a47d3d;
+    bottom: -1em;
+    top: -1em;
+    margin: auto;
+}
+
+#lightsaber .handle .other-gold-fuck {
+    height: .625em;
+    width: .5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d18710), color-stop(10%, #d18710), color-stop(50%, #724a09), color-stop(70%, #d18710), to(#432b05));
+    background: linear-gradient(#d18710 0%, #d18710 10%, #724a09 50%, #d18710 70%, #432b05 100%);
+    left: 7.25em;
+    border-top: 0.0625em solid #724a09;
+    border-bottom: 0.0625em solid #724a09;
+}
+
+#lightsaber .handle .other-gold-fuck:before {
+    border-right: 0;
+    left: 100%;
+    width: .25em;
+    height: .875em;
+    top: -1em;
+    bottom: -1em;
+    margin: auto;
+    border-radius: 0;
+}
+
+#lightsaber .handle .fin {
+    left: 8em;
+    width: .5em;
+    border-radius: 0;
+}
+
+#lightsaber .handle .fin:before,
+#lightsaber .handle .fin:after {
+    top: -1em;
+    bottom: -1em;
+    margin: auto;
+}
+
+#lightsaber .handle .fin:before {
+    width: .25em;
+    height: 1em;
+    border-radius: 0;
+    left: 100%;
+    height: 1.25em;
+}
+
+#lightsaber .handle .fin:after {
+    width: .125em;
+    background: #595a5a;
+    left: .5625em;
+    height: 1.5em;
+}
+
+
+/* @-webkit-keyframes loadnumber {
+    0% {
+      content: "0";
+    }
+    1% {
+      content: "2";
+    }
+    2% {
+      content: "4";
+    }
+    3% {
+      content: "6";
+    }
+    4% {
+      content: "8";
+    }
+    5% {
+      content: "10";
+    }
+    6% {
+      content: "12";
+    }
+    7% {
+      content: "14";
+    }
+    8% {
+      content: "16";
+    }
+    9% {
+      content: "18";
+    }
+    10% {
+      content: "20";
+    }
+    11% {
+      content: "22";
+    }
+    12% {
+      content: "24";
+    }
+    13% {
+      content: "26";
+    }
+    14% {
+      content: "28";
+    }
+    15% {
+      content: "30";
+    }
+    16% {
+      content: "32";
+    }
+    17% {
+      content: "34";
+    }
+    18% {
+      content: "36";
+    }
+    19% {
+      content: "38";
+    }
+    20% {
+      content: "40";
+    }
+    21% {
+      content: "42";
+    }
+    22% {
+      content: "44";
+    }
+    23% {
+      content: "46";
+    }
+    24% {
+      content: "48";
+    }
+    25% {
+      content: "50";
+    }
+    26% {
+      content: "52";
+    }
+    27% {
+      content: "54";
+    }
+    28% {
+      content: "56";
+    }
+    29% {
+      content: "58";
+    }
+    30% {
+      content: "60";
+    }
+    31% {
+      content: "62";
+    }
+    32% {
+      content: "64";
+    }
+    33% {
+      content: "66";
+    }
+    34% {
+      content: "68";
+    }
+    35% {
+      content: "70";
+    }
+    36% {
+      content: "72";
+    }
+    37% {
+      content: "74";
+    }
+    38% {
+      content: "76";
+    }
+    39% {
+      content: "78";
+    }
+    40% {
+      content: "80";
+    }
+    41% {
+      content: "82";
+    }
+    42% {
+      content: "84";
+    }
+    43% {
+      content: "86";
+    }
+    44% {
+      content: "88";
+    }
+    45% {
+      content: "90";
+    }
+    46% {
+      content: "92";
+    }
+    47% {
+      content: "94";
+    }
+    48% {
+      content: "96";
+    }
+    49% {
+      content: "98";
+    }
+    50% {
+      content: "100";
+    }
+    51% {
+      content: "100";
+    }
+    52% {
+      content: "100";
+    }
+    53% {
+      content: "100";
+    }
+    54% {
+      content: "100";
+    }
+    55% {
+      content: "100";
+    }
+    56% {
+      content: "100";
+    }
+    57% {
+      content: "100";
+    }
+    58% {
+      content: "100";
+    }
+    59% {
+      content: "100";
+    }
+    60% {
+      content: "100";
+    }
+    61% {
+      content: "100";
+    }
+    62% {
+      content: "100";
+    }
+    63% {
+      content: "100";
+    }
+    64% {
+      content: "100";
+    }
+    65% {
+      content: "100";
+    }
+    66% {
+      content: "100";
+    }
+    67% {
+      content: "100";
+    }
+    68% {
+      content: "100";
+    }
+    69% {
+      content: "100";
+    }
+    70% {
+      content: "100";
+    }
+    71% {
+      content: "100";
+    }
+    72% {
+      content: "100";
+    }
+    73% {
+      content: "100";
+    }
+    74% {
+      content: "100";
+    }
+    75% {
+      content: "100";
+    }
+    76% {
+      content: "100";
+    }
+    77% {
+      content: "100";
+    }
+    78% {
+      content: "100";
+    }
+    79% {
+      content: "100";
+    }
+    80% {
+      content: "100";
+    }
+    81% {
+      content: "100";
+    }
+    82% {
+      content: "100";
+    }
+    83% {
+      content: "100";
+    }
+    84% {
+      content: "100";
+    }
+    85% {
+      content: "100";
+    }
+    86% {
+      content: "100";
+    }
+    87% {
+      content: "100";
+    }
+    88% {
+      content: "100";
+    }
+    89% {
+      content: "100";
+    }
+    90% {
+      content: "100";
+    }
+    91% {
+      content: "100";
+    }
+    92% {
+      content: "100";
+    }
+    93% {
+      content: "100";
+    }
+    94% {
+      content: "100";
+    }
+    95% {
+      content: "100";
+    }
+    96% {
+      content: "100";
+    }
+    97% {
+      content: "100";
+    }
+    98% {
+      content: "100";
+    }
+    99% {
+      content: "100";
+    }
+    100% {
+      content: "100";
+    }
+  } */
+
+@keyframes loadnumber {
+    0% {
+        content: "0";
+    }
+
+    1% {
+        content: "2";
+    }
+
+    2% {
+        content: "4";
+    }
+
+    3% {
+        content: "6";
+    }
+
+    4% {
+        content: "8";
+    }
+
+    5% {
+        content: "10";
+    }
+
+    6% {
+        content: "12";
+    }
+
+    7% {
+        content: "14";
+    }
+
+    8% {
+        content: "16";
+    }
+
+    9% {
+        content: "18";
+    }
+
+    10% {
+        content: "20";
+    }
+
+    11% {
+        content: "22";
+    }
+
+    12% {
+        content: "24";
+    }
+
+    13% {
+        content: "26";
+    }
+
+    14% {
+        content: "28";
+    }
+
+    15% {
+        content: "30";
+    }
+
+    16% {
+        content: "32";
+    }
+
+    17% {
+        content: "34";
+    }
+
+    18% {
+        content: "36";
+    }
+
+    19% {
+        content: "38";
+    }
+
+    20% {
+        content: "40";
+    }
+
+    21% {
+        content: "42";
+    }
+
+    22% {
+        content: "44";
+    }
+
+    23% {
+        content: "46";
+    }
+
+    24% {
+        content: "48";
+    }
+
+    25% {
+        content: "50";
+    }
+
+    26% {
+        content: "52";
+    }
+
+    27% {
+        content: "54";
+    }
+
+    28% {
+        content: "56";
+    }
+
+    29% {
+        content: "58";
+    }
+
+    30% {
+        content: "60";
+    }
+
+    31% {
+        content: "62";
+    }
+
+    32% {
+        content: "64";
+    }
+
+    33% {
+        content: "66";
+    }
+
+    34% {
+        content: "68";
+    }
+
+    35% {
+        content: "70";
+    }
+
+    36% {
+        content: "72";
+    }
+
+    37% {
+        content: "74";
+    }
+
+    38% {
+        content: "76";
+    }
+
+    39% {
+        content: "78";
+    }
+
+    40% {
+        content: "80";
+    }
+
+    41% {
+        content: "82";
+    }
+
+    42% {
+        content: "84";
+    }
+
+    43% {
+        content: "86";
+    }
+
+    44% {
+        content: "88";
+    }
+
+    45% {
+        content: "90";
+    }
+
+    46% {
+        content: "92";
+    }
+
+    47% {
+        content: "94";
+    }
+
+    48% {
+        content: "96";
+    }
+
+    49% {
+        content: "98";
+    }
+
+    50% {
+        content: "100";
+    }
+
+    51% {
+        content: "100";
+    }
+
+    52% {
+        content: "100";
+    }
+
+    53% {
+        content: "100";
+    }
+
+    54% {
+        content: "100";
+    }
+
+    55% {
+        content: "100";
+    }
+
+    56% {
+        content: "100";
+    }
+
+    57% {
+        content: "100";
+    }
+
+    58% {
+        content: "100";
+    }
+
+    59% {
+        content: "100";
+    }
+
+    60% {
+        content: "100";
+    }
+
+    61% {
+        content: "100";
+    }
+
+    62% {
+        content: "100";
+    }
+
+    63% {
+        content: "100";
+    }
+
+    64% {
+        content: "100";
+    }
+
+    65% {
+        content: "100";
+    }
+
+    66% {
+        content: "100";
+    }
+
+    67% {
+        content: "100";
+    }
+
+    68% {
+        content: "100";
+    }
+
+    69% {
+        content: "100";
+    }
+
+    70% {
+        content: "100";
+    }
+
+    71% {
+        content: "100";
+    }
+
+    72% {
+        content: "100";
+    }
+
+    73% {
+        content: "100";
+    }
+
+    74% {
+        content: "100";
+    }
+
+    75% {
+        content: "100";
+    }
+
+    76% {
+        content: "100";
+    }
+
+    77% {
+        content: "100";
+    }
+
+    78% {
+        content: "100";
+    }
+
+    79% {
+        content: "100";
+    }
+
+    80% {
+        content: "100";
+    }
+
+    81% {
+        content: "100";
+    }
+
+    82% {
+        content: "100";
+    }
+
+    83% {
+        content: "100";
+    }
+
+    84% {
+        content: "100";
+    }
+
+    85% {
+        content: "100";
+    }
+
+    86% {
+        content: "100";
+    }
+
+    87% {
+        content: "100";
+    }
+
+    88% {
+        content: "100";
+    }
+
+    89% {
+        content: "100";
+    }
+
+    90% {
+        content: "100";
+    }
+
+    91% {
+        content: "100";
+    }
+
+    92% {
+        content: "100";
+    }
+
+    93% {
+        content: "100";
+    }
+
+    94% {
+        content: "100";
+    }
+
+    95% {
+        content: "100";
+    }
+
+    96% {
+        content: "100";
+    }
+
+    97% {
+        content: "100";
+    }
+
+    98% {
+        content: "100";
+    }
+
+    99% {
+        content: "100";
+    }
+
+    100% {
+        content: "100";
+    }
+}
+
+/* @-webkit-keyframes growth {
+    0% {
+      width: 0%;
+    }
+    1% {
+      width: 2%;
+    }
+    2% {
+      width: 4%;
+    }
+    3% {
+      width: 6%;
+    }
+    4% {
+      width: 8%;
+    }
+    5% {
+      width: 10%;
+    }
+    6% {
+      width: 12%;
+    }
+    7% {
+      width: 14%;
+    }
+    8% {
+      width: 16%;
+    }
+    9% {
+      width: 18%;
+    }
+    10% {
+      width: 20%;
+    }
+    11% {
+      width: 22%;
+    }
+    12% {
+      width: 24%;
+    }
+    13% {
+      width: 26%;
+    }
+    14% {
+      width: 28%;
+    }
+    15% {
+      width: 30%;
+    }
+    16% {
+      width: 32%;
+    }
+    17% {
+      width: 34%;
+    }
+    18% {
+      width: 36%;
+    }
+    19% {
+      width: 38%;
+    }
+    20% {
+      width: 40%;
+    }
+    21% {
+      width: 42%;
+    }
+    22% {
+      width: 44%;
+    }
+    23% {
+      width: 46%;
+    }
+    24% {
+      width: 48%;
+    }
+    25% {
+      width: 50%;
+    }
+    26% {
+      width: 52%;
+    }
+    27% {
+      width: 54%;
+    }
+    28% {
+      width: 56%;
+    }
+    29% {
+      width: 58%;
+    }
+    30% {
+      width: 60%;
+    }
+    31% {
+      width: 62%;
+    }
+    32% {
+      width: 64%;
+    }
+    33% {
+      width: 66%;
+    }
+    34% {
+      width: 68%;
+    }
+    35% {
+      width: 70%;
+    }
+    36% {
+      width: 72%;
+    }
+    37% {
+      width: 74%;
+    }
+    38% {
+      width: 76%;
+    }
+    39% {
+      width: 78%;
+    }
+    40% {
+      width: 80%;
+    }
+    41% {
+      width: 82%;
+    }
+    42% {
+      width: 84%;
+    }
+    43% {
+      width: 86%;
+    }
+    44% {
+      width: 88%;
+    }
+    45% {
+      width: 90%;
+    }
+    46% {
+      width: 92%;
+    }
+    47% {
+      width: 94%;
+    }
+    48% {
+      width: 96%;
+    }
+    49% {
+      width: 98%;
+    }
+    50% {
+      width: 100%;
+    }
+    51% {
+      width: 100%;
+    }
+    52% {
+      width: 100%;
+    }
+    53% {
+      width: 100%;
+    }
+    54% {
+      width: 100%;
+    }
+    55% {
+      width: 100%;
+    }
+    56% {
+      width: 100%;
+    }
+    57% {
+      width: 100%;
+    }
+    58% {
+      width: 100%;
+    }
+    59% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    61% {
+      width: 100%;
+    }
+    62% {
+      width: 100%;
+    }
+    63% {
+      width: 100%;
+    }
+    64% {
+      width: 100%;
+    }
+    65% {
+      width: 100%;
+    }
+    66% {
+      width: 100%;
+    }
+    67% {
+      width: 100%;
+    }
+    68% {
+      width: 100%;
+    }
+    69% {
+      width: 100%;
+    }
+    70% {
+      width: 100%;
+    }
+    71% {
+      width: 100%;
+    }
+    72% {
+      width: 100%;
+    }
+    73% {
+      width: 100%;
+    }
+    74% {
+      width: 100%;
+    }
+    75% {
+      width: 100%;
+    }
+    76% {
+      width: 100%;
+    }
+    77% {
+      width: 100%;
+    }
+    78% {
+      width: 100%;
+    }
+    79% {
+      width: 100%;
+    }
+    80% {
+      width: 100%;
+    }
+    81% {
+      width: 100%;
+    }
+    82% {
+      width: 100%;
+    }
+    83% {
+      width: 100%;
+    }
+    84% {
+      width: 100%;
+    }
+    85% {
+      width: 100%;
+    }
+    86% {
+      width: 100%;
+    }
+    87% {
+      width: 100%;
+    }
+    88% {
+      width: 100%;
+    }
+    89% {
+      width: 100%;
+    }
+    90% {
+      width: 100%;
+    }
+    91% {
+      width: 100%;
+    }
+    92% {
+      width: 100%;
+    }
+    93% {
+      width: 100%;
+    }
+    94% {
+      width: 100%;
+    }
+    95% {
+      width: 100%;
+    }
+    96% {
+      width: 100%;
+    }
+    97% {
+      width: 100%;
+    }
+    98% {
+      width: 100%;
+    }
+    99% {
+      width: 100%;
+    }
+    100% {
+      width: 100%;
+    }
+  } */
+@keyframes growth {
+    0% {
+        width: 0%;
+    }
+
+    1% {
+        width: 2%;
+    }
+
+    2% {
+        width: 4%;
+    }
+
+    3% {
+        width: 6%;
+    }
+
+    4% {
+        width: 8%;
+    }
+
+    5% {
+        width: 10%;
+    }
+
+    6% {
+        width: 12%;
+    }
+
+    7% {
+        width: 14%;
+    }
+
+    8% {
+        width: 16%;
+    }
+
+    9% {
+        width: 18%;
+    }
+
+    10% {
+        width: 20%;
+    }
+
+    11% {
+        width: 22%;
+    }
+
+    12% {
+        width: 24%;
+    }
+
+    13% {
+        width: 26%;
+    }
+
+    14% {
+        width: 28%;
+    }
+
+    15% {
+        width: 30%;
+    }
+
+    16% {
+        width: 32%;
+    }
+
+    17% {
+        width: 34%;
+    }
+
+    18% {
+        width: 36%;
+    }
+
+    19% {
+        width: 38%;
+    }
+
+    20% {
+        width: 40%;
+    }
+
+    21% {
+        width: 42%;
+    }
+
+    22% {
+        width: 44%;
+    }
+
+    23% {
+        width: 46%;
+    }
+
+    24% {
+        width: 48%;
+    }
+
+    25% {
+        width: 50%;
+    }
+
+    26% {
+        width: 52%;
+    }
+
+    27% {
+        width: 54%;
+    }
+
+    28% {
+        width: 56%;
+    }
+
+    29% {
+        width: 58%;
+    }
+
+    30% {
+        width: 60%;
+    }
+
+    31% {
+        width: 62%;
+    }
+
+    32% {
+        width: 64%;
+    }
+
+    33% {
+        width: 66%;
+    }
+
+    34% {
+        width: 68%;
+    }
+
+    35% {
+        width: 70%;
+    }
+
+    36% {
+        width: 72%;
+    }
+
+    37% {
+        width: 74%;
+    }
+
+    38% {
+        width: 76%;
+    }
+
+    39% {
+        width: 78%;
+    }
+
+    40% {
+        width: 80%;
+    }
+
+    41% {
+        width: 82%;
+    }
+
+    42% {
+        width: 84%;
+    }
+
+    43% {
+        width: 86%;
+    }
+
+    44% {
+        width: 88%;
+    }
+
+    45% {
+        width: 90%;
+    }
+
+    46% {
+        width: 92%;
+    }
+
+    47% {
+        width: 94%;
+    }
+
+    48% {
+        width: 96%;
+    }
+
+    49% {
+        width: 98%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    51% {
+        width: 100%;
+    }
+
+    52% {
+        width: 100%;
+    }
+
+    53% {
+        width: 100%;
+    }
+
+    54% {
+        width: 100%;
+    }
+
+    55% {
+        width: 100%;
+    }
+
+    56% {
+        width: 100%;
+    }
+
+    57% {
+        width: 100%;
+    }
+
+    58% {
+        width: 100%;
+    }
+
+    59% {
+        width: 100%;
+    }
+
+    60% {
+        width: 100%;
+    }
+
+    61% {
+        width: 100%;
+    }
+
+    62% {
+        width: 100%;
+    }
+
+    63% {
+        width: 100%;
+    }
+
+    64% {
+        width: 100%;
+    }
+
+    65% {
+        width: 100%;
+    }
+
+    66% {
+        width: 100%;
+    }
+
+    67% {
+        width: 100%;
+    }
+
+    68% {
+        width: 100%;
+    }
+
+    69% {
+        width: 100%;
+    }
+
+    70% {
+        width: 100%;
+    }
+
+    71% {
+        width: 100%;
+    }
+
+    72% {
+        width: 100%;
+    }
+
+    73% {
+        width: 100%;
+    }
+
+    74% {
+        width: 100%;
+    }
+
+    75% {
+        width: 100%;
+    }
+
+    76% {
+        width: 100%;
+    }
+
+    77% {
+        width: 100%;
+    }
+
+    78% {
+        width: 100%;
+    }
+
+    79% {
+        width: 100%;
+    }
+
+    80% {
+        width: 100%;
+    }
+
+    81% {
+        width: 100%;
+    }
+
+    82% {
+        width: 100%;
+    }
+
+    83% {
+        width: 100%;
+    }
+
+    84% {
+        width: 100%;
+    }
+
+    85% {
+        width: 100%;
+    }
+
+    86% {
+        width: 100%;
+    }
+
+    87% {
+        width: 100%;
+    }
+
+    88% {
+        width: 100%;
+    }
+
+    89% {
+        width: 100%;
+    }
+
+    90% {
+        width: 100%;
+    }
+
+    91% {
+        width: 100%;
+    }
+
+    92% {
+        width: 100%;
+    }
+
+    93% {
+        width: 100%;
+    }
+
+    94% {
+        width: 100%;
+    }
+
+    95% {
+        width: 100%;
+    }
+
+    96% {
+        width: 100%;
+    }
+
+    97% {
+        width: 100%;
+    }
+
+    98% {
+        width: 100%;
+    }
+
+    99% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Fin Loader */
+/* Comienza BB8 */
+.droid {
+    --size: 140px;
+    position: absolute;
+    margin-left: 0;
+    width: var(--size);
+    top: 30%;
+    left: 40%;
+    z-index: 4;
+}
+
+.droid .radios {
+    position: absolute;
+    transition: left 0.6s;
+    left: 22%;
+}
+
+.droid .radios.right {
+    left: 0%;
+}
+
+.droid .radios .radio {
+    background: #f0e5d6;
+    position: absolute;
+    width: 2px;
+}
+
+.droid .radios .radio.short {
+    height: 20px;
+    top: -60px;
+    left: 50px;
+}
+
+.droid .radios .radio.long {
+    border-top: 6px solid #020204;
+    border-bottom: 6px solid #020204;
+    height: 36px;
+    top: -78px;
+    left: 56px;
+}
+
+.droid .head {
+    background: #dad5cd;
+    border-radius: 90px 90px 14px 14px;
+    -moz-border-radius: 90px 90px 14px 14px;
+    -webkit-border-radius: 90px 90px 14px 14px;
+    height: 56px;
+    margin-left: -45px;
+    overflow: hidden;
+    position: absolute;
+    width: 90px;
+    z-index: 1;
+    top: -46px;
+    left: 50%;
+}
+
+.droid .head .band {
+    position: absolute;
+    width: 100%;
+}
+
+.droid .head .band.one {
+    background: rgb(159, 154, 154);
+    height: 6px;
+    z-index: 1;
+    top: 6px;
+    opacity: .8;
+}
+
+.band.two {
+    background: rgb(210, 124, 71);
+    height: 4px;
+    top: 17px;
+}
+
+.droid .head .band.three {
+    background: rgb(188, 179, 179);
+    height: 4px;
+    top: 27px;
+}
+
+.droid .head .eyes {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: left .6s;
+    left: 0%;
+    z-index: 10;
+}
+
+.droid .head .eyes .eyes.right {
+    left: 36%;
+}
+
+.droid .head .eyes .eye {
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.droid .head .eyes .eye.one {
+    background: #0f0f1a;
+    border: 4px solid #d0c5b5;
+    height: 20px;
+    width: 20px;
+    top: 12px;
+    left: 12%;
+}
+
+.droid .head .eyes .eye.one::after {
+    background: white;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 3px;
+    top: 4px;
+    right: 4px;
+}
+
+.droid .head .eyes .eye.two {
+    background: #ddd2c2;
+    border: 1px solid #06060e;
+    height: 16px;
+    width: 16px;
+    top: 30px;
+    left: 40%;
+}
+
+.droid .head .eyes .eye.two::after {
+    background: #07070b;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.droid .body {
+    background: #ded7ce;
+    border-radius: 50%;
+    height: var(--size);
+    overflow: hidden;
+    position: relative;
+    width: var(--size);
+
+    -webkit-animation-name: girar-uno;
+    /*Nombre de la animacion*/
+    -webkit-animation-duration: 2s;
+    /*ciclo de la animacion*/
+    -webkit-animation-iteration-count: infinite;
+    /*numer de veces que se repite*/
+    -webkit-animation-timing-function: linear;
+}
+
+.droid .body .lines {
+    border: 2px solid rgb(167, 145, 108);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    opacity: .6;
+}
+
+.droid .body .lines.two {
+    top: -10px;
+    left: -250px;
+}
+
+.droid .body .circle {
+    background: rgb(180, 102, 54);
+    border-radius: 50%;
+    height: 70px;
+    margin-left: -35px;
+    width: 70px;
+    position: absolute;
+}
+
+.droid .body .circle::after {
+    background: #d1c3ad;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 70%;
+    margin-top: -35%;
+    margin-left: -35%;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+}
+
+.droid .body .circle.one {
+    margin-left: -40px;
+    height: 80px;
+    width: 90px;
+    top: 6%;
+    left: 50%;
+}
+
+.droid .body .circle.two {
+    height: 38px;
+    width: 76px;
+    transform: rotate(40deg);
+    top: 70%;
+    left: 18%;
+}
+
+.droid .body .circle.two::after {
+    top: 110%;
+}
+
+.droid .body .circle.three {
+    height: 30px;
+    transform: rotate(-50deg);
+    top: 66%;
+    left: 90%;
+}
+
+.droid .body .circle.three::after {
+    top: 110%;
+}
+
+@-webkit-keyframes girar-uno {
+    from
+
+    /*0%*/
+        {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to
+
+    /*100%*/
+        {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Fin BB8 Cuerpo Animaciones */
+@media only screen and (min-width:200px) and (max-width: 570px) {
+    .droid {
+        left: 32%;
+    }
+}
+
+@media only screen and (min-width:571px) and (max-width: 700px) {
+    .droid {
+        left: 35%;
+    }
+}
+
+@media only screen and (min-width:1301px) {
+    .droid {
+        left: 45%;
+    }
+}

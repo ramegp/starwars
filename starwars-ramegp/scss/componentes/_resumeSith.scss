@@ -1,0 +1,63 @@
+/* ==================== Resumen ========================= */
+.resume {
+	display: block;
+	.section-title {
+		color: white;
+		font-family: $font-jedi;
+	}
+	.cronologia-sith-titulo {
+		font-family: $font-jedi;
+		font-size: 26px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: rgba(0, 0, 0, 0.966);
+	}
+	.cronologia-sith-item {
+		padding: 0 0 20px 20px;
+		margin-top: -2px;
+		border-left: 2px solid #dbdbdb;
+		position: relative;
+		h4 {
+			line-height: 18px;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-family: "Poppins", sans-serif;
+			color: rgba(0, 0, 0, 0.966);
+			margin-bottom: 10px;
+		}
+		h5 {
+			font-size: 16px;
+			background: #e4edf9;
+			padding: 5px 15px;
+			display: inline-block;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+		ul {
+			padding-left: 20px;
+			li {
+				padding-bottom: 10px;
+			}
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			@include width-heigth(16px,16px);
+			border-radius: 50px;
+			left: -9px;
+			top: 0;
+			background: rgb(161, 22, 22);
+			border: 2px solid #ffffff;
+		}
+	}
+	.resume-item-texto {
+		color: rgb(211, 211, 211);
+	}
+}
+.resumeContainer {
+	display: block;
+}

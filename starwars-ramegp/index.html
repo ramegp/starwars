@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Esta pagina contiene un resumen del mundo star Wars
+    para poder entenderlo mejor a la hora de ver las peliculas/series. Fue creada para un curso de coderhouse
+    con fines educativos"> <!-- de que se trata la web, aprox 160caracteres no quede en blanco -->
+    <meta name="keywords" content="starwars,"> <!-- palabras claves,no tiene limite -->
+    <meta name="author" content="Ramiro Gonzalez Perez ">
+
+    <!-- oprn graph -->
+    <meta property="og:locale" content="es_ES"> <!-- contenido en el lenguaje -->
+    <meta property="og:type" content="website"><!-- Tipo de web que vas a compartir -->
+    <meta property="og:title" content="Star wars"><!-- titulo con el que se comparte -->
+    <meta property="og:description" content="Esta pagina contiene un resumen del mundo star Wars
+    para poder entenderlo mejor a la hora de ver las peliculas/series. Fue creada para un curso de coderhouse
+    con fines educativos">
+    <meta property="og.url" content="https://starwars-ramegp.com.ar">
+    <meta property="og.image" content="./img/fondo/baner-halcon-milenario.jpg"><!-- imagen que queremos que se muestre en las redes soc -->
+    <meta property="og.image:width" content="1200">
+    <meta property="og.image:heigth" content="600">
+    <link rel="shortcut icon" href="./img/menu/galacticRepublic.png" type="image/x-icon">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Resumen mundo StarWars</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body class="body">
+    <!-- Menu -->
+    <input type="checkbox" id="btn-nav" class="checkbox">
+    <header>
+        <div class="header-container">
+            <label for="btn-nav" class="btn-label">
+                <div id="nav-container">
+                    <div class="toggle-icon" id="toggle-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div><!-- /toggle-icon -->
+                </div>
+            </label>
+
+        </div>
+    </header>
+    <nav class="menu" id="menu">
+        <h2 class="titulo-menu">Menu</h2>
+        <ul>
+            <div class="item">
+                <a href="#sith">
+                    <div class="icon"><img src="./img/menu/galacticRepublic.png" alt=""></div>
+                    <div class="title"><span>Sith</span></div>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="">Arbol</a></li>
+                    <li class="sub-menu-item"><a href="">Regla de los DOS</a></li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <a href="#jedi">
+                    <div class="icon"><img src="./img/menu/logoJedi.png" alt=""></div>
+                    <div class="title"><span>Jedi</span></div>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#tecnologia">
+                    <div class="icon"><img src="./img/menu/logoTecnologiaMenu2.png" alt=""></div>
+                    <div class="title"><span>Tecnologia</span></div>
+                </a>
+                <ul class="sub-menu m-0 p-0">
+                    <li class="sub-menu-item"><a href="">Naves</a></li>
+                    <li class="sub-menu-item"><a href="">Armas</a></li>
+                </ul>
+
+            </div>
+
+            <div class="item">
+                <a href="#peliculas">
+                    <div class="icon"><img src="./img/menu/logoMenu2.png" alt=""></div>
+                    <div class="title"><span>Peliculas</span></div>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#linea-temporal">
+                    <div class="icon"><img src="./img/menu/iconoStormtropper2.png" alt=""></div>
+                    <div class="title"><span>Linea Temporal</span></div>
+                </a>
+            </div>
+
+        </ul>
+    </nav>
+    <!-- Fin Menu -->
+    <!-- ------------------------------------------Baner---------------------------------------------- -->
+    <div class="fondo">
+        <div class="baner-titulo">Star Wars</div>
+        <h2 class="tituloMaquina">"<span class="typed"></span>"</h2>
+        <!-- <div class="baner-subtitulo">Que la fuerza te acompañe</div> -->
+    </div>
+    <!-- Fin Baner -->
+    <!-- Main -->
+    <main class="p-0 m-0">
+
+        <!--  Juego -->
+        <section id="cta" class="cta">
+            <div class="container">
+
+                <div class="row" data-aos="zoom-out">
+                    <div class="col-lg-9 text-center text-lg-left">
+                        <h3>Proximamente</h3>
+                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="#">Juego</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fin Juego -->
+
+
+        <!-- Frases -->
+        <section id="testimonials" class="testimonials section-bg">
+            <div class="container ">
+                <!-- Carrusel de Frases -->
+                <div class="container">
+                    <!-- Comienza Fila -->
+                    <div class="row mt-5">
+                        <!-- Comienza columna 1 -->
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <!-- Comienza Frase -->
+                            <div class="testimonial-item">
+                                <p>
+                                    Impresionante… ¡Muy impresionante! Controlas tu miedo, Obi-Wan te ha instruido bien…
+                                </p>
+                                <img src="./img/personajes/kylo.png" class="testimonial-img" alt="">
+                                <h3>Darht Vader</h3>
+                                <h4 class="text-light">Luke skywalker</h4>
+                            </div>
+                            <!-- Finaliza Frase -->
+                            <!-- Comienza Frase -->
+                            <div class="testimonial-item">
+                                <p>
+                                    La fortaleza de un Jedi fluye de la Fuerza. Pero cuidado con el lado oscuro: Ira,
+                                    temor,
+                                    agresión; de la Fuerza del lado oscuro son. Fácil fluyen rápidos a unirse en el
+                                    combate.
+                                    Si una vez tomas el sendero del lado oscuro para siempre dominará tu destino.
+                                    Te consumirá, al igual que lo hizo con el aprendiz de Obi-Wan
+                                </p>
+                                <img src="./img/personajes/darthVader2.jpg" class="testimonial-img" alt="">
+                                <h3>Yoda</h3>
+                                <h4 class="text-light">-</h4>
+                            </div>
+                            <!-- Finaliza Frase -->
+                        </div>
+                        <!-- Finzaliza columna 1 -->
+                        <!-- Comienza columna 2 -->
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <!-- Comienza Frase -->
+                            <div class="testimonial-item">
+                                <p>
+                                    A veces no comprendo el comportamiento humano.Sólo intento hacer mi trabajo de la
+                                    forma mas eficiente.
+                                </p>
+                                <img src="./img/personajes/kylo.png" class="testimonial-img" alt="">
+                                <h3>C-3PO</h3>
+                                <h4 class="text-light">R2D2</h4>
+                            </div>
+                            <!-- Finaliza Frase -->
+                            <!-- Comienza Frase -->
+                            <div class="testimonial-item">
+                                <p>
+                                    Tus ojos pueden engañarte, no confíes en ellos.
+                                </p>
+                                <img src="./img/personajes/darthVader2.jpg" class="testimonial-img" alt="">
+                                <h3>Obi-Wan kenobi</h3>
+                                <h4 class="text-light">Luke skywalker</h4>
+                            </div>
+                            <!-- Finaliza Frase -->
+                        </div>
+                        <!-- Finaliza columna 2 -->
+                    </div>
+                    <!-- Finaliza Fila -->
+                </div>
+                <!-- Finaliza Carrusel -->
+
+            </div>
+        </section>
+        <!-- Fin Frases -->
+
+
+
+        <!-- Seccion Sith -->
+        <section id="sith" class="section-sith">
+            <div class="section-titulo">Sith</div>
+            <!-- Galeria imagenes sith -->
+            <div class="container-fluid p-0 m-0">
+                <div class="row d-flex flex-wrap p-0 m-0">
+                    <div class="d-flex justify-content-around p-0 m-0 col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap">
+                        <div class="item-arbol personajeMaul">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">
+                                    <p class="nombre-personaje-titulo">Darth Maul</p>
+                                    <input class="btn2" type="button" value="LEER MAS" id="btnMaul">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-arbol personajeVaderD">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">
+                                    <p class="nombre-personaje-titulo">Lord Vader</p>
+                                    <input class="btn2" type="button" value="LEER MAS" id="btnVader">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-arbol personajeKyloR">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Kylo Ren</div>
+                            </div>
+                        </div>
+
+                        <div class="item-arbol personajeDoku">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Conde Dooku</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around p-0 m-0 col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap">
+                        <div class="item-arbol personajePalpatineSith">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Darth Sidious</div>
+                            </div>
+                        </div>
+
+                        <div class="item-arbol personajePlageriusSith">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Plagerius</div>
+                            </div>
+                        </div>
+
+
+                        <div class="item-arbol personajeDoku">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Conde Dooku</div>
+                            </div>
+                        </div>
+
+                        <div class="item-arbol personajePalpatineSith">
+                            <div class="informacion-personaje">
+                                <div class="nombre-personaje">Darth Sidious</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Fin Galeria imagenes sith -->
+            <!-- Overlay tipo modal -->
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <p class="overlay-popup-titulo">Darth Maul</p>
+                    <p class="overlay-popup-subtitulo">Mato a su padre</p>
+                    <p class="texto">Maul fue un zabrak dathomiriano sensible a la Fuerza y un guerrero del lado oscuro
+                        que sirvió
+                        como el aprendiz Señor Oscuro de los Sith Darth Maul durante los últimos años de la República
+                        Galáctica y
+                        reinó como señor del crimen durante el dominio del Imperio Galáctico. El hijo de la Madre Talzin
+                        de las
+                        Hermanas de la Noche, Maul fue tomado a una edad temprana por el Señor Oscuro de los Sith Darth
+                        Sidious,
+                        quien lo ungió como su primer aprendiz Sith, Darth Maul. Gracias a su entrenamiento, Maul se
+                        hizo fuerte en
+                        el lado oscuro de la Fuerza, convirtiéndose en un duelista y asesino experto que anhelaba
+                        revelar la
+                        continuada supervivencia de los Sith a la Orden Jedi. Durante la crisis en Naboo en el 32 ABY,
+                        Maul hizo
+                        frente al Maestro Jedi Qui-Gon Jinn y al Padawan Obi-Wan Kenobi. Aunque tuvo éxito en matar al
+                        primero, Maul
+                        fue derrotado y mutilado por el aprendiz de Jinn, quien dio al Lord Sith por muerto. Como
+                        resultado de la
+                        derrota y aparente muerte de Maul, Sidious lo reemplazó por el Conde Dooku, el mentor Jedi de
+                        Jinn que
+                        adoptó la identidad Sith de Darth Tyranus.</p>
+                    <!-- Comienza la tabla  -->
+                    <table class=" tablaPersonaje">
+                        <tbody>
+                            <tr>
+                                <td class="tablaPersonaje-foto" colspan="3"><img src="./img/personajes/darthMaul.jpg"
+                                        alt=""></td>
+                            </tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <td>Darth Maul</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>A2</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>A2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim itaque maiores nam iure nisi
+                        ducimus, ex
+                        explicabo veniam? Quas exercitationem qui iure rerum voluptatibus temporibus dicta nobis
+                        voluptas laudantium
+                        placeat, eligendi quis dolor dolorem aliquid nemo in molestias non provident labore commodi
+                        adipisci tempore
+                        iusto! Eum voluptatem, sint quod nihil facere qui illo nam sed impedit voluptas sequi magni
+                        quibusdam
+                        deleniti at labore quaerat. Est ut ab maiores qui et veritatis nulla alias illo suscipit iure
+                        facere at,
+                        rerum commodi voluptatibus nam quis porro, nesciunt, laboriosam hic non error id! Nisi expedita
+                        fuga culpa
+                        veniam similique placeat necessitatibus dolores doloribus?</p>
+
+                </div>
+            </div>
+            <!-- Fin overlay tipo modal -->
+
+            <!--  Resumen Sith con historia -->
+            <section id="resume" class="resume pt-5 pb-2 d-flex">
+                <div class="container resumeContainer">
+
+                    <div class="section-title">
+                        <h2>Resumen</h2>
+                        <p>Pequeño Resumen de los maestros, aprendices sith de forma cronologica</p>
+                    </div>
+                    <!-- Fila Con 3 Columnas -->
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <!-- data-aos="fade-up" -->
+                        <div class="col-lg-4">
+                            <!-- Personaje1 -->
+                            <h3 class="cronologia-sith-titulo">Darth Bane</h3>
+                            <div class="cronologia-sith-item pb-0">
+                                <h4>Aprendiz de Revan/ En que año </h4>
+                                <p class="resume-item-texto"><em>Creador de la regla de dos 1000 años
+                                        antes de la batalla de yavin, primer lord
+                                        oscuro de los SITH durante 20 años.
+                                        Destruyo a los sith anteriores y se lo considera
+                                        el lengendario sith'ari.
+
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Tras estudiar el hologron de dath revan se
+                                        autoproclamo 'Dath', titulo prohibido en la
+                                        hermandad y logro la destruccion de esta.
+                                        Instauro la regla de dos y tomo a zannah como
+                                        aprendiz</em></p>
+                            </div>
+                            <!-- Personaje 2 -->
+                            <h3 class="cronologia-sith-titulo">Darth zannah</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Bane</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de dath bane entre 1000 y 980 aby, maestra desde entonces</em></p>
+                                <p class="resume-item-texto"><em>Siendo niña fue reclutada por el ejercito
+                                        de la luz jedi,y tras las crueldades de la guerra
+                                        se convirtio en aprendiz de bane, a quien ayudo
+                                        a establecer las bases de la regla de dos. Ayudo
+                                        a mantener la existencia de los sith en secreto
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Bane, decepcionado por la demora
+                                        de zannah en desafiarlo, estuvo a punto de tomar a darth
+                                        cognus como su nueva aprendiz, pero zannah convertida
+                                        ya en una poderosa hechicera sith, lo derroto
+                                    </em></p>
+                            </div>
+
+                            <!-- Personaje 3 -->
+                            <h3 class="cronologia-sith-titulo">Darth cognus</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Zannah</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de zannah desde 980 aby, mas adelante
+                                        Lord oscura sith
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Una prestigiosa asesina itkotchi contratada
+                                        para capturar a darth bane por una venganza
+                                        fue capaz de cumplir su mision y entregarlo
+                                        pero bane logro escapar y tomarla como aprendiz
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Entonces llego zannah para desafiar a su maestro.
+                                        Cognus se convirtio en aprendiz de la ganadora,
+                                        con el tiempo la mataria a ella y se convertiria en maestra
+                                        perpetuando la regla de dos.
+                                    </em></p>
+                            </div>
+                            <!-- Personaje 4 -->
+                            <h3 class="cronologia-sith-titulo">Darth millenial</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de cognus</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de dath cognus (mas de 900 años antes
+                                        de la battala de yavin) abandono los sith para
+                                        crear la secta de la fuerza oscura
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Nacido mutante, con tres ojos y el poder de ver
+                                        el futuro, estaba en desacuerdo con su maestro cognus
+                                        y la regla de dos, asi que creo su propia secta
+                                        oscura en dromund kaas: los profetas del lado
+                                        oscuro, donde se nombro profeta supremo
+                                    </em></p>
+                            </div>
+                            <!-- Personaje 5 -->
+                            <h3 class="cronologia-sith-titulo">Darth vectivius</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>-</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Un humano que escubrio el poder del lado oscuro
+                                        en uno de los asteroides cerca de bimmel cuando trabajaba
+                                        al frente de una compania minera, decidio buscar
+                                        a los sith y aprender de ellos.
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Terminado su entrenamiento, regreso al asteroides
+                                        y desarrollo una nueva tecnica del lado oscuro,
+                                        creando fantasmas que estaban anclados a entidades
+                                        reales.
+                                    </em></p>
+
+                            </div>
+
+                        </div>
+                        <!-- Fin Columna 1 -->
+
+                        <!-- Columna 2 -->
+                        <!-- data-aos="fade-up" data-aos-delay="100" -->
+                        <div class="col-lg-4">
+
+                            <!-- Personaje 6 -->
+                            <h3 class="cronologia-sith-titulo">Darth gravid</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>-</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Lord sith y maestro de darth gean,
+                                        hasta 550 años antes de la batalla de yavin
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Sith humano poseedor de secretos como
+                                        la transferencia de esencia. Con el tiempo
+                                        se vio atraido por el lado luminoso de la
+                                        fuerza y destruyo holocrones sith y otras
+                                        fuentes de conocimiento oscuro
+
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Su aprendiz dath gean no compartia
+                                        sus ideas sobre la compasion y el altruismo
+                                        de la orden sith, mas propios de los jedi
+                                    </em></p>
+                            </div>
+                            <!-- Personaje 7 -->
+                            <h3 class="cronologia-sith-titulo">Darth Gean</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de gravid</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz hasta los 550 aby, maestra desde
+                                        entonces
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Acabo con su maestro por estar
+                                        'orbitando' del lado jedi y asi salvar a los sith
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Lord sith que continuo con las enseñanzas
+                                        de bane
+                                    </em></p>
+                            </div>
+
+                            <!-- Personaje 8 -->
+                            <h3 class="cronologia-sith-titulo">Darth tenebrous</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>-</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Maestro de darth plagueis durante 100años
+                                        desde 167 aby
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Lord sith de raza bith con poderes de
+                                        precognicion que fue determinante para el
+                                        desarrollo de las teorias de su aprendiz, darth plagueis
+
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Despues de que plagueis lo traicionara,
+                                        trato de sobrevivir y obtener la vida eterna
+                                        a traves de los maxiclorianos, sin exito.
+                                    </em></p>
+
+                            </div>
+                            <!-- Personaje 9 -->
+                            <h3 class="cronologia-sith-titulo">Darth Plagueis</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Tenebrous</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Apendiz de tenebrous 167 a 67 aby</em></p>
+                                <p class="resume-item-texto"><em>Maestro de sidious entre 67 a 32 aby
+                                        artifice de la caida de los jedi y alzamiento
+                                        del imperio galactica
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Tenebrous influyo en su nacimiento, pues
+                                        buscaba al aprendiz perfecto para poder controlarlo
+                                        a traves de los maxiclorianos. Miembro del clan
+                                        bancario intergalactico.
+                                    </em></p>
+                                <p class="resume-item-texto"><em>En busqueda de la vida eterna, fue responsable
+                                        indirecto del nacimiento de anakin skywalker.
+                                        Su aprendiz lo asesino el mismo dia que lo nombraron
+                                        canciller y mataron a dath maul
+                                    </em></p>
+                            </div>
+                            <!-- Personaje 10 -->
+                            <h3 class="cronologia-sith-titulo">Darth sidious</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de plagueis</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de plagueis entre 61 y32 aby
+                                        maestro de vader entre 32 y 4 dby. Volvio brevemente
+                                        entre 11 y 12 dby. Desde 19 aby fue emperador
+                                        cumpliendo el sueño sith
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Noble originario de naboo, el habil
+                                        politico ascendio rapidamente al poder
+                                        hasta convertirse en canciller supremo, asesinar
+                                        a su maestro y orquestar las guerras clon
+                                        y la orden 66 que destruyo a los jedi
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Se autoproclamo emperador del primer
+                                        imperio galactico, que goberno hasta que
+                                        vader lo destruyo a bordo de la segunda estrella
+                                        de la muerte. Regreso en cuerpos clonados para
+                                        ser derrotado por los hijos de vader
+                                    </em></p>
+                            </div>
+                        </div>
+                        <!-- Fin Columna 2 -->
+                        <!-- Columna 3 -->
+                        <div class="col-lg-4">
+
+                            <!-- Personaje 11 -->
+                            <h3 class="cronologia-sith-titulo">Darth Maul</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Sidious</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de Darth Sidious desde 53 aby. Maestro ilegitimo de savage</em></p>
+                                <p class="resume-item-texto"><em>Nacido en dathomir sidious le enseño los
+                                        caminos del lado oscuro mientras aun estaba bajo
+                                        la sombra de plagueis. En la batalla de naboo se
+                                        enfrento a qui-gon jin, a quien mato y a obi-wan
+                                        kenobi, quien lo derroto
+                                    </em></p>
+                                <p class="resume-item-texto"><em>reaparecio durante las guerras clon como
+                                        un ciborg y tomo como aprendiz a su hermano de sangre
+                                        savage opress. Su obsesion consistia en enfrentarse
+                                        a obi-wan kenobi y hacerlo sufrir, sin embargo fue derrotado
+                                        por sidious
+                                    </em></p>
+                            </div>
+                            <!-- Personaje 12 -->
+                            <h3 class="cronologia-sith-titulo">Darth Vergere</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Sidious</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de sidious 32 a 29aby</em></p>
+                                <p class="resume-item-texto"><em>Enigmatica jedi, uno de los primeros seres
+                                        de la galaxia que contacto con los yuuzhan vong.
+                                        Aprendiz fallida de sidious fallo al intentar asesinarlo
+                                    </em></p>
+
+                            </div>
+                            <!-- Personaje 13 -->
+                            <h3 class="cronologia-sith-titulo">Darth Tyranus</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Sidious</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de sidious 32 a 19aby lider de los
+                                        acolitos oscuros
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Pese a ser un jedi prometedor sus ideales lo llevaron
+                                        a abandonar la orden y unirse a los sith. Entreno a los
+                                        jedi oscuros conocidos como acolitos y tambien al general
+                                        ciborg grievous
+                                    </em></p>
+                                <p class="resume-item-texto"><em>
+                                        Como dooku lidero el bando separatista en las guerras
+                                        clon, al mando del mayor ejercito droide de la Historia.
+                                        Murio a bordo de su nave por anakin skywalker traicionado
+                                        por su maestro
+                                    </em></p>
+
+                            </div>
+                            <!-- Personaje 14 -->
+                            <h3 class="cronologia-sith-titulo">Darth Vader</h3>
+                            <div class="cronologia-sith-item">
+                                <h4>Aprendiz de Sidious</h4>
+                                <h5>2015 - 2016</h5>
+                                <p class="resume-item-texto"><em>Aprendiz de sidious y mano derecha
+                                        en el gobierno de su imperio (19 aby a 4 dby)
+                                        maestro de varios durante los mismos años
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Encontrado en tatooine por qui-gon jin y
+                                        aprendiz padawan de obi-wan kenobi. Sidious lo
+                                        tento al lado oscuro y fue el ejecutor de la gran purga
+                                        jedi. Resulto malherido y convertido en ciborg tras luchar
+                                        en mustafar con su antiguo maestro
+                                    </em></p>
+                                <p class="resume-item-texto"><em>Finalmente acabo con sidious y dejo atras
+                                        la oscuridad, arrepintiendose en el lecho de muerte
+                                        en brazos de su hijo, luke skywalker
+                                    </em></p>
+
+                            </div>
+                        </div>
+                        <!-- Fin Columna 3 -->
+                    </div>
+                    <!-- Fin Fila -->
+                </div>
+            </section>
+            <!-- Fin Resumen Sith -->
+        </section>
+        <!-- Fin Seccion Sith -->
+
+        <!-- Seccion Jedi -->
+        <section id="jedi" class="section-jedi">
+            <div class="section-titulo">Jedi</div>
+        </section>
+        <!-- Fin Seccion Jedi -->
+
+        <!-- Seccion Tecnologia -->
+        <section id="tecnologia" class="section-tecnologia">
+            <div class="section-titulo">Tecnologia</div>
+
+            <!-- Sables -->
+            <div class="contenedor">
+                <div class="titulo" id="titulo1">Mance Windu</div>
+                <div class="titulo" id="titulo2">Obi Wan</div>
+                <div class="titulo" id="titulo3">Darth Vader</div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable red" id="sable1"></div>
+                    <div class="box mango" id="mango1">
+                        <img src="./img/sables/vader_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable blue" id="sable2"></div>
+                    <div class="box mango" id="mango2">
+                        <img src="./img/sables/obiwan_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable green" id="sable3"></div>
+                    <div class="box mango" id="mango3">
+                        <img src="./img/sables/luke_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable yellow" id="sable4"></div>
+                    <div class="box mango" id="mango4">
+                        <img src="./img/sables/quigonjinPaint_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable grey" id="sable5"></div>
+                    <div class="box mango" id="mango5">
+                        <img src="./img/sables/yoda_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contenedor-sable">
+                    <div class="box sable violet" id="sable6"></div>
+                    <div class="box mango" id="mango6">
+                        <img src="./img/sables/mance_preview_rev_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Sables -->
+        </section>
+        <!-- Fin Seccion Tecnologia -->
+
+        <!-- Seccion Peliculas -->
+        <section id="peliculas" class="section-peliculas">
+            <div class="section-titulo">Peliculas</div>
+            <div class="section-sub-titulo">Batalla Yavin</div>
+            <!-- Acordeon bootstrap Batalla yavin -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header accordion-item-titulo" id="flush-headingOne">
+                        <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Preludio
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="accordion-p-texto">
+                            Durante la Batalla de Scarif, Jyn Erso logró robar planos detallados y especificaciones de diseño 
+                            para la estación de combate Imperial conocida como la Estrella de la Muerte y transmitirlos a la flota de la Alianza Rebelde
+                            en órbita; estos planos pronto se dirigieron a la Princesa Leia Organa. Las fuerzas Imperiales bajo el mando de Darth 
+                            Vader pronto capturaron a la princesa y a la tripulación del Tantive IV.
+                            </p>
+                            <p class="accordion-p-texto">
+                            La Princesa Leia fue tomada prisionera a bordo de la Estrella de la Muerte por Darth Vader. Para luego ser recatada del 
+                            cautiverio por una improbable alianza del contrabandista Han Solo, el Maestro Jedi Obi-Wan Kenobi, un joven granjero de 
+                            Tatooine llamado Luke Skywalker y un wookiee llamado Chewbacca. El grupo, en posesión de los planos de la Estrella de la Muerte,
+                            huyó a la base de los rebeldes en Yavin 4, siendo perseguidos por la estación de batalla.
+                            </p>
+                            <p class="accordion-p-texto">
+                            Antes de que Organa llegara a la base, Mon Mothma fue evacuada a bordo de una lanzadera, ya que el General Dodonna la consideraba
+                            el núcleo de la Rebelión. Durante su tiempo fuera, ella compuso un plan de contingencia: rendirse al Emperador Palpatine.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header accordion-item-titulo" id="flush-headingTwo">
+                        <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            La batalla
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="accordion-p-texto">
+                                Un análisis de los planos identificó una debilidad en la estación de combate, colocada allí por Galen Erso: un pequeño puerto
+                                de escape térmico que conducía al reactor principal que permitiría el acceso a un punto que podría causar una reacción en cadena
+                                que destruiría la estación espacial.
+                            </p>
+                            <p class="accordion-p-texto">
+                                El General Jan Dodonna informó a los pilotos rebeldes sobre el plan. Las defensas de la Estrella de la Muerte fueron diseñadas para 
+                                un asalto directo a gran escala. Al usar cazas pequeños, los rebeldes se deslizarían por las principales defensas de la Estrella de
+                                la Muerte, maniobrando en una trinchera estrecha que conducía al puerto de escape e insertando torpedos de protones a través del 
+                                puerto de escape.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Con la Estrella de la Muerte acercándose, se enviaron Alas-Y del Escuadrón Oro y Alas-X del Escuadrón Rojo y el Escuadrón Verde
+                                para llevar a cabo el plan de ataque. Un total de 30 naves se desplegaron en el asalto a la Estrella de la Muerte: 8 Alas-Y que 
+                                componían el Escuadrón Oro y 22 Alas-X, 12 que componían el Escuadrón Rojo y el resto que forman el Escuadrón Verde. Los cazas
+                                estelares se abrieron paso entre los emplazamientos de armas, destruyendo a muchos a medida que pasaban. Rojo Seis Jek Tono Porkins
+                                fue el primero en ser destruido en la descarga de torretas. El despliegue de cazas TIE Imperiales, incluyendo a la Teniente Iden 
+                                Versio, devastó a los atacantes rebeldes, destruyéndolos mucho más rápido y más eficientemente de lo que habían podido hacer 
+                                los emplazamientos de armas de la estación. Rojo Cuatro John D. Branon fue el primero en ser derribado por los TIE entrantes
+                            </p>
+                            <p class="accordion-p-texto">
+                                Durante la batalla, los rebeldes en el templo, incluidos los pilotos que quedaron atrás, observaron la batalla desde el centro 
+                                de mando, junto con Nera Kase. Ella contabilizó las pérdidas de cazas estelares rebeldes como ocurrieron durante la batalla.
+                            </p>
+                            <p class="accordion-p-texto">
+                                En algún momento de la batalla, el oficial Imperial Jude Edivon a bordo de la Estrella de la Muerte identificó la amenaza de 
+                                la estrategia de ataque de los rebeldes e intentó advertir a sus superiores del peligro. Sin embargo, el Gran Moff Tarkin ignoró
+                                la advertencia y se negó a evacuar. Mientras tanto, el propio Darth Vader decidió liderar un escuadrón de cazas TIE para 
+                                destruir a los cazas rebeldes restantes.
+                            </p>
+                            <p class="accordion-p-texto">
+                                El primer ataque fue ejecutado por un trío de Alas-Y del Escuadrón Oro. Los tres Alas-Y, liderados por el Líder Oro Jon Vander con
+                                Oro Dos Dex Tiree y Oro Cinco Davish Krail escoltando, intentaron disparar en el puerto de escape pero fueron derribados por 
+                                Darth Vader. Una segunda ronda de ataque fue realizada por un trío de Alas-X del Escuadrón Rojo volado por el Líder Rojo Garven Dreis,
+                                Rojo Diez Theron Nett y Rojo Doce Puck Naeco. Darth Vader detuvo a Theron y Puck, pero Dreis pudo disparar un tiro al puerto de escape.
+                                Sin embargo, sus torpedos de protones no alcanzaron su marca, solo rasgaron la superficie. Antes de ser derribado por Darth Vader, 
+                                Dreis ordenó otra ronda de ataque.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Siguiendo la orden final del Líder Rojo, Rojo Cinco Luke Skywalker lideró el intento final con Rojo Dos Wedge Antilles y Rojo Tres, 
+                                el viejo amigo de Luke Biggs Darklighter, como hombres de ala. Atravesando la trinchera a toda velocidad, se encontraron siendo seguidos 
+                                por Darth Vader y sus cazas.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Vader dañó personalmente al caza de Antilles, lo que lo obligó a retirarse y destruyó el Ala-X de Darklighter, lo que obligó a Skywalker a 
+                                intentar el disparo por su cuenta. Sin embargo, en este terrible momento, el Comando Rebelde se mostró preocupado cuando el joven piloto 
+                                desactivó sin sentido su sistema de puntería para el intento, pero Skywalker les aseguró que nada estaba mal; El espíritu de Kenobi le 
+                                aconsejó que confiara en la Fuerza para su ataque. Por su parte, Vader sintió este poder por sí mismo y encontró que disparar contra el
+                                caza era inusualmente difícil, con un solo ataque que puso al droide astromecánico del caza fuera de servicio. Cuando Vader se preparó 
+                                para finalmente derribar al enemigo, uno de sus hombres de ala fue repentinamente derribado desde arriba a su lado. La fuente de ese ataque
+                                fue el Halcón Milenario saliendo de la luz de la estrella cercana. Han Solo y Chewbacca, que se cree que abandonaron a los rebeldes antes 
+                                del asalto, regresaron inesperadamente para ayudar a Skywalker en su momento más desesperado.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Distraído momentáneamente por la intervención, el piloto restante de Vader intentó protegerlo, pero chocó con su nave, lanzándose en espiral
+                                hacia el lado de la trinchera y derribando a Vader de la Estrella de la Muerte, permitiendo a Skywalker disparar al puerto de escape. Con 
+                                la ayuda de la Fuerza, los torpedos se dispararon a lo largo de la trinchera y entraron en el pozo perfectamente, como los dos Alas-X supervivientes,
+                                el único Ala-Y sobreviviente y el carguero ligero marchando hacia Yavin 4. Los pilotos rebeldes sobrevivientes incluyeron a Skywalker, 
+                                Antilles y Oro Tres Evaan Verlaine. En el macropuente, sin darse cuenta de su inminente perdición, Tarkin continuó examinando la batalla
+                                mientras los técnicos contaban los momentos hasta que comenzara el disparo. Pocos segundos antes de que el superláser pudiera destruir 
+                                la luna, los torpedos golpearon el reactor y la gigantesca estación explotó, matando a todos a bordo y salvando a Yavin 4.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header accordion-item-titulo" id="flush-headingThree">
+                        <button class="accordion-button collapsed accordion-button-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Consecuencias
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p class="accordion-p-texto">
+                                Skywalker, Solo y los cazas rebeldes sobrevivientes regresaron a Yavin, donde celebraron una ceremonia de premiación y les 
+                                otorgaron medallas a la pareja por el logro de salvar a la Rebelión.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Mothma, habiendo oído hablar de la victoria, descartó permanentemente su plan de contingencia.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Darth Vader, uno de los pocos sobrevivientes Imperiales de la batalla, fue recuperado en su TIE Avanzado x1 dañado por los
+                                pilotos Imperiales Ciena Ree y Berisse Sai.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Iden Versio, quien se encontraba fuera de la explosión de la Estrella de la Muerte, logró pilotear su caza TIE dañado a 
+                                Yavin IV, donde logro eyectarse antes de que se estrellara en la jungla. Allí, ella parchó sus heridas y robó un transporte
+                                de la base rebelde durante las festividades, logrando escapar hacia espacio Imperial y posteriomente recuperarse en Hosnian Prime.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Casi toda la culpa de la derrota se atribuyó a Tarkin y su exceso de confianza. Había asumido que la estación no necesitaría 
+                                una escolta, y no había lanzado cazas TIE, aparte del único escuadrón que Vader había lanzado. En cualquier caso, Tarkin ya no 
+                                estaba vivo para defenderse y el Imperio nunca atacaría a los rebeldes sin explotar a sus números más grandes de nuevo.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Cassio Tagge recibió el rango de Gran General, ya que el Emperador había tomado nota de su argumento en contra del uso de 
+                                la Estrella de la Muerte como única arma del Imperio, y de su conciencia del grado de la amenaza rebelde. Vader fue castigado
+                                y el Emperador le recordó personalmente cómo él solo estaba vivo para asumir la culpa de la destrucción y el fracaso de la 
+                                Estrella de la Muerte. Luego se le ordenó actuar según la voluntad de Tagge.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Thane Kyrell y los otros Imperiales estacionados en la base rebelde abandonada en Dantooine durante la batalla fueron cortados
+                                de la comunicación con Coruscant después de que la Estrella de la Muerte fuera destruida. Los rumores no confirmados se 
+                                extendieron a través de las filas que la nueva arma se había ido. Al principio, estos rumores fueron descartados como una 
+                                trampa Imperial para sacar a los rebeldes de la clandestinidad.
+                            </p>
+                            <p class="accordion-p-texto">
+                                La destrucción de la Estrella de la Muerte causó un caos dentro de las filas Imperiales, lo que llevó a descuidos deliberados 
+                                en las investigaciones internas y la rápida promoción de muchos oficiales jóvenes y tenientes como Ciena Ree para reemplazar 
+                                a los oficiales de mayor rango asesinados en la Estrella de la Muerte.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Poco después de la batalla, los rebeldes se vieron obligados a abandonar el lugar de su victoria, huyendo del Imperio una vez más.
+                                En los días posteriores a la batalla, la evacuación de los rebeldes fue brevemente interrumpida por un Destructor Estelar Imperial
+                                que amenazó con destruir la base principal antes de que pudiera completarse la evacuación. Los rebeldes lograron desactivar la 
+                                tripulación del Destructor Estelar, sin embargo, pronto descubrieron que sus armas estaban preparadas para disparar a la base en
+                                cuestión de minutos. Sin embargo, gracias a los esfuerzos de Verlaine, la nave falló en su objetivo y se reanudó la evacuación.
+                                Algún tiempo después, los Imperiales finalmente recuperaron el control del Destructor Estelar.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Para capitalizar la debilidad del Imperio luego de la destrucción de la Estrella de la Muerte, los Rebeldes comenzaron a realizar
+                                docenas de ataques contra objetivos Imperiales para debilitar al Imperio ahora vulnerable. Además de los ataques llevados a cabo
+                                en los astilleros de Kuat y una base de suministros en Imdaar, un equipo rebelde compuesto por Leia Organa, Han Solo y Luke Skywalker 
+                                atacaron y destruyeron la fábrica de armamento más grande del Imperio en Cymoon 1, lo que minó gravemente la producción militar Imperial.
+                            </p>
+                            <p class="accordion-p-texto">
+                                Seis años antes de la destrucción del sistema Hosnian, una facción política no oficial en el Senado Galáctico de la Nueva República 
+                                conocida por admirar al Imperio Galáctico, conocidos como los Centristas, cuestionó los relatos históricos oficiales de la Nueva República
+                                de la Batalla de Yavin y la Guerra Civil Galáctica. Creían que la Estrella de la Muerte fue destruida por un traidor Imperial y no por 
+                                Luke Skywalker y la Alianza Rebelde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Acordeon bootstrap batalla yavin -->
+        </section>
+        <!-- Fin Seccion Peliculas -->
+
+        <!-- Seccion Linea-temporal -->
+        <section id="linea-temporal" class="section-linea-temporal">
+            <div class="section-titulo">Linea-temporal</div>
+            <!-- Linea Temporal -->
+            <section class="page-section" id="about">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="linea-temporal-encabezado">Peliculas en orden cronologico</h2>
+                        <h3 class="linea-temporal-sub-encabezado">Mundo Star Wars</h3>
+                    </div>
+                    <ul class="linea-temporal">
+                        <!-- Item izquierda -->
+                        <li>
+                            <div class="linea-temporal-imagen"><img class="rounded-circle img-fluid" src="" alt="" />
+                            </div>
+                            <div class="linea-temporal-panel">
+                                <div class="linea-temporal-panel-encabezado">
+                                    <h4>Episodio I</h4>
+                                    <h4 class="linea-temporal-panel-sub-encabezado">2009-2011</h4>
+                                </div>
+                                <div class="linea-temporal-body">
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Item Derecha -->
+                        <li class="linea-temporal-inverted">
+                            <div class="linea-temporal-imagen"><img class="rounded-circle img-fluid" src="" alt="" />
+                            </div>
+                            <div class="linea-temporal-panel">
+                                <div class="linea-temporal-panel-encabezado">
+                                    <h4>Episodio II</h4>
+                                    <h4 class="linea-temporal-panel-sub-encabezado">An Agency is Born</h4>
+                                </div>
+                                <div class="linea-temporal-body">
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="linea-temporal-imagen"><img class="rounded-circle img-fluid" src="" alt="" />
+                            </div>
+                            <div class="linea-temporal-panel">
+                                <div class="linea-temporal-panel-encabezado">
+                                    <h4>Episodio III</h4>
+                                    <h4 class="linea-temporal-panel-sub-encabezado">Transition to Full Service</h4>
+                                </div>
+                                <div class="linea-temporal-body">
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="linea-temporal-inverted">
+                            <div class="linea-temporal-imagen"><img class="rounded-circle img-fluid" src="" alt="" />
+                            </div>
+                            <div class="linea-temporal-panel">
+                                <div class="linea-temporal-panel-encabezado">
+                                    <h4>Episodio IV</h4>
+                                    <h4 class="linea-temporal-panel-sub-encabezado">Phase Two Expansion</h4>
+                                </div>
+                                <div class="linea-temporal-body">
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                        ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="linea-temporal-inverted">
+                            <div class="linea-temporal-imagen">
+                                <h4>
+                                    Se Parte
+                                    <br />
+                                    De la
+                                    <br />
+                                    Historia
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Fin linea temporal -->
+        </section>
+        <!-- Fin Seccion Linea-temporal -->
+
+        <!-- Fin Main -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://github.com/ramegp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+            <p class="text-muted small mb-0">StarWars-Ramegp &copy;</p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+    <audio src="./audio/sonido-sable.mp3"></audio>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./js/maquina.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
