@@ -696,6 +696,138 @@
             </div>
             <!-- Fin Sables -->
         </section>
+        <!-- Formulario Armar personaje -->
+        <div class="container-fluid custom-saber">
+            <div class="contenedor-titulo">
+                <span class="contenedor-form-titulo">Customiza tu Personaje</span>
+            </div>
+            <div class="contendor-form">
+                <!-- Formulario personaje -->
+                <form action="" name="rellenar">
+                    <div class="grupo-input-text">
+                        <div class="grupo-input">
+                            <label class="form-label-input" for="">Titulo del personaje :</label>
+                            <input class="form-input" type="text" placeholder="Maestro jedi, Darth, Lord, ..." name="tituloPersonaje">
+                        </div>
+    
+                        <div class="grupo-input">
+                            <label class="form-label-input" for="">Nombre :</label>
+                            <input class="form-input" type="text" placeholder="Nombre personaje ..." name="nombrePersonaje">
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="grupo-input-select">
+                        <div class="grupo-input">
+                            <label class="form-label-input" for="edad">Nacimiento</label>
+                            <input class="form-select" type="date" id="nacimiento" name="nacimientoPersonaje">
+                        </div>
+    
+                        <div class="grupo-input">
+                            <label class="form-label-input" for="mango">Elegir el Mango</label>
+                            <select class="form-select" name="mango" id="mango" onchange="cambiarFoto(this)">
+                                <option value="./sables/yoda_preview_rev_1.png">Yoda</option>
+                                <option value="./sables/vader_preview_rev_1.png">Vader</option>
+                                <option value="./sables/obiwan_preview_rev_1.png">Obiwan</option>
+                            </select>
+                        </div>
+    
+                        <div class="grupo-input">
+                            <label class="form-label-input" for="fondo">Color ligthsaber</label>
+                            <select class="form-select" name="fondo" id="fondo" onchange="cambiarFondo(this)">
+                                <option value="red">Rojo</option>
+                                <option value="blue">Azul</option>
+                                <option value="green">Verde</option>
+                                <option value="yellow">Amarillo</option>
+                                <option value="violet">Violeta</option>
+                                <option value="purple">Purpura</option>
+                                <option value="royalblue">Royalblue</option>
+                                <option value="lime">Lime</option>
+                                <option value="darkgreen">Verde Oscuro</option>
+                            </select>
+                        </div>
+    
+                    </div>
+                    <div class="grupo-input">
+                        <label class="form-label-input" for="file">Cargar foto del personaje</label>
+                        <input class="form-input-file" type="file" name="file" id="file" name="fotoPersonaje" onchange="previewFile()">
+                    </div>
+    
+    
+                    <!-- Boton para ventana modal -->
+                    <!-- Button trigger modal -->
+                    <div class="grupo-button">
+                        <button type="reset" class="btn btn-primary btn-form">
+                            Borrar
+                        </button>
+                        <button type="button" class="btn btn-primary btn-form" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" id="mostrarPersonaje" name="mostrarPersonaje">
+                            Ver Personaje
+                        </button>
+                    </div>
+    
+                    <!-- Modal -->
+                    <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content modal-content-custom">
+                                <div class="modal-header modal-header-custom">
+                                    <h5 class="modal-title modal-title-custom" id="exampleModalLabel">
+                                        Personaje
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body modal-body-custom">
+                                    <table class="tablaPersonaje">
+                                        <tbody class="tablaCustomPersonaje">
+                                            <tr>
+                                                <td class="tablaPersonaje-foto" colspan="3"><img src="" height="150" alt="Image preview..."></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th-custom">Titulo</th>
+                                                <td class="td-custom" id="cargarTitulo"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th-custom">Nombre</th>
+                                                <td class="td-custom" id="cargarNombre"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th-custom">Nacimiento</th>
+                                                <td class="td-custom" id="cargarNacimiento">B3</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        
+                                    </table>
+                                    <div class="contenedor-sable-laser">
+                                        <div class="sable-laser">
+                                            <div class="contenedor-mango" id="contenedor-mango"></div>
+                                            <div class="contenedor-luz" id="contenedor-luz"></div>
+                                        </div>
+                                    </div>
+                                    
+    
+                                </div>
+                                <div class="modal-footer modal-footer-custom">
+                                    <button type="button" class="btn btn-modal-custom" data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin boton para ventana modal -->
+    
+    
+                </form>
+                <!-- Fin formulario -->
+            </div>
+    
+        </div>
+        <!-- fin caja contenedora form -->
+        <!-- Fin Formulario Armar Personaje -->
         <!-- Fin Seccion Tecnologia -->
 
         <!-- Seccion Peliculas -->
