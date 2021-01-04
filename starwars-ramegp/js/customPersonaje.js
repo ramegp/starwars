@@ -6,8 +6,13 @@ var contenedorNacimiento = document.getElementById("cargarNacimiento");
 
 
 function previewFile() {
-    const preview = document.querySelector('img');
+    const preview = document.querySelector('#customFotoPersonaje');
     const file = document.querySelector('input[type=file]').files[0];
+
+    console.log(document.querySelector('input[type=file]').files[0]);
+    console.log(file);
+    console.log('preview '+ preview);
+
     const reader = new FileReader();
   
     reader.addEventListener("load", function () {
@@ -42,39 +47,39 @@ function cambiarFoto(choiceMango) {
     imgMango.style.width="38px";
     imgMango.style.height = "auto";
     imgMango.style.position = "absolute";
-    imgMango.style.top = "150px";    
+    imgMango.style.top = "40px";    
     
 }
 
 
-let sable1 = document.getElementById('contenedor-luz');
-let mango1 = document.getElementById('contenedor-mango');
-var flag1 = false;
+let sableCustom = document.getElementById('contenedor-luz');
+let mangoCustom = document.getElementById('contenedor-mango');
+var flagCustom = false;
 
 
-var v = document.getElementsByTagName("audio")[0];
-var sound = false; // boolean por cada sable que haga ruido
+var vCustom = document.getElementsByTagName("audio")[0];
+var soundCustom = false; // boolean por cada sable que haga ruido
 
 //voy a necesitar un boolean por cada sable
-function sonar() {
-    if (!sound) {
-        v.play();
-        sound = true;
+function sonarCustom() {
+    if (!soundCustom) {
+        vCustom.play();
+        soundCustom = true;
     } else {
-        v.pause();
-        v.currentTime = 0;
-        sound = false;
+        vCustom.pause();
+        vCustom.currentTime = 0;
+        soundCustom = false;
     }
 }
 
-mango1.addEventListener('click', function () {
-    sonar();
-    if (!flag1) {
-        sable1.style.transform = 'scaleY(1)';
-        flag1 = true;
+mangoCustom.addEventListener('click', function () {
+    sonarCustom();
+    if (!flagCustom) {
+        sableCustom.style.transform = 'scaleY(1)';
+        flagCustom = true;
     } else {
-        sable1.style.transform = 'scaleY(0)';
-        flag1 = false;
+        sableCustom.style.transform = 'scaleY(0)';
+        flagCustom = false;
     }
 })
 
