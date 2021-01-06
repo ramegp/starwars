@@ -23,6 +23,7 @@ main {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
+	z-index: 100;
 	.floating-btn {
 		display: block;
 		width: 3.5em;
@@ -135,6 +136,7 @@ main {
 .circular-menu.circular-menu-left {
 	right: auto;
 	left: 1em;
+	z-index: 100;
 	&:after {
 		background-color: #b0938b;
 		
