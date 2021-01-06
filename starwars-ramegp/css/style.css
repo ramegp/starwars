@@ -866,7 +866,7 @@ section {
   justify-content: center;
   flex-direction: column; }
   .custom-saber .contenedor-titulo {
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     background-color: #e3e5e7c7;
     box-shadow: 0px 0px 17px black;
@@ -881,7 +881,7 @@ section {
         .custom-saber .contenedor-titulo .contenedor-form-titulo {
           font-size: 1.6rem; } }
   .custom-saber .contendor-form {
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     background-color: #e3e5e7c7;
     box-shadow: 0px 0px 17px black;
@@ -1019,13 +1019,15 @@ section {
 /* Parte de los sables */
 /* Fin parte delos sables */
 @media (max-width: 460px) {
-  /* .contenedor-titulo {
-  	width: 100%;
-  } */
   .custom-saber .contenedor-titulo {
     width: 100%; }
   .custom-saber .contendor-form {
     width: 100%; } }
+@media (min-width: 461px) and (max-width: 700px) {
+  .custom-saber .contenedor-titulo {
+    width: 80%; }
+  .custom-saber .contendor-form {
+    width: 80%; } }
 /* ===================== Sables ======================== */
 /* ==================== Fin Sables ======================== */
 /* ==================== PopUp ============================== */

@@ -6,7 +6,7 @@
 	@include displayAlignJustify(flex,center,center);
 	flex-direction: column;
 	.contenedor-titulo {
-		width: 50%;
+		width: 70%;
 		@include BackgroundRadiusCustomPersonaje(#e3e5e7c7,10px);
 		@include sombraCustomPersonaje();
 		margin-bottom: 13px;
@@ -22,7 +22,7 @@
 		}
 	}
 	.contendor-form {
-		width: 50%;
+		width: 70%;
 		@include BackgroundRadiusCustomPersonaje(#e3e5e7c7,10px);
 		@include sombraCustomPersonaje();
 		overflow: hidden;
@@ -199,16 +199,24 @@
 /* Fin parte delos sables */
 
 @media (max-width:460px) {
-	/* .contenedor-titulo {
-		width: 100%;
-	} */
-	
 	.custom-saber{
 		.contenedor-titulo{
 			width: 100%;
 		}
 		.contendor-form {
 			width: 100%;
+		}
+	}
+	
+}
+
+@media (min-width:461px) and (max-width:700px) {
+	.custom-saber{
+		.contenedor-titulo{
+			width: 80%;
+		}
+		.contendor-form {
+			width: 80%;
 		}
 	}
 	
