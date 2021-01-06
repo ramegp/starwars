@@ -169,3 +169,22 @@
     color: $color;
 }   
 /* =================== Fin Linea Temporal ================= */
+
+/* =================== Custom Personaje Formulario ================== */
+@mixin sombraCustomPersonaje {
+	box-shadow: 0px 0px 17px black;
+}
+@mixin BackgroundRadiusCustomPersonaje($bg-color,$radius) {
+	border-radius: $radius;
+	background-color: $bg-color;
+}
+@mixin Border-radiusBackgroundBorder($radius,$bg-color,$border) {
+	@include BackgroundRadiusCustomPersonaje($bg-color,$radius);
+	border: $border;
+}
+@mixin resetFormInputSelect ($radius,$bg-color,$border){
+	@include Border-radiusBackgroundBorder(10px,transparent,none);
+	width: calc(100% - 10px);
+	font-size: 16px;
+}
+/* =================== Fin custom personaje formulario */
