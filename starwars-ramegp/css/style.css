@@ -904,174 +904,123 @@ main {
   background: linear-gradient(to bottom, #9e2892, rgba(80, 13, 100, 0.931));
   display: block; }
 
-.custom-saber {
-  background: linear-gradient(147deg, #524d4d 0%, #a82952 100%);
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  .custom-saber .contenedor-titulo {
-    width: 50%;
-    border-radius: 10px;
-    background-color: #e3e5e7c7;
-    box-shadow: 0px 0px 17px black;
-    margin-bottom: 13px;
+/* Estilos menu */
+.circular-menu {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 100; }
+  .circular-menu .floating-btn {
+    display: block;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: #fd4235;
+    color: white;
     text-align: center;
-    overflow: hidden; }
-    .custom-saber .contenedor-titulo .contenedor-form-titulo {
-      color: black;
-      margin: 0px 0px 0px 5px;
-      font-size: 2.5rem; }
-      @media (max-width: 460px) {
-        .custom-saber .contenedor-titulo .contenedor-form-titulo {
-          font-size: 1rem; } }
-  .custom-saber .contendor-form {
-    width: 50%;
-    border-radius: 10px;
-    background-color: #e3e5e7c7;
-    box-shadow: 0px 0px 17px black;
-    overflow: hidden; }
-    .custom-saber .contendor-form .grupo-input-text, .custom-saber .contendor-form .grupo-input-select {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 10px; }
-    .custom-saber .contendor-form .grupo-input {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      margin-bottom: 10px;
-      margin-left: 15px;
-      margin-right: 15px;
-      border-bottom: 1px solid; }
-      .custom-saber .contendor-form .grupo-input .form-label-input {
-        color: #626262;
-        margin-left: 8px;
-        font-size: 16px; }
-      .custom-saber .contendor-form .grupo-input .form-input {
-        margin-left: 5px;
-        border-radius: 10px;
-        background-color: transparent;
-        border: none;
-        width: calc(100% - 10px);
-        font-size: 16px;
-        outline: none; }
-        .custom-saber .contendor-form .grupo-input .form-input::placeholder {
-          color: #272727;
-          border: none; }
-      .custom-saber .contendor-form .grupo-input .form-select {
-        border-radius: 10px;
-        background-color: transparent;
-        border: none;
-        width: calc(100% - 10px);
-        font-size: 16px;
-        color: black; }
-        .custom-saber .contendor-form .grupo-input .form-select option {
-          background-color: rgba(200, 192, 184, 0.794); }
-          .custom-saber .contendor-form .grupo-input .form-select option:checked {
-            color: black;
-            background-color: #beb6ad; }
-        .custom-saber .contendor-form .grupo-input .form-select .form-input-file {
-          width: 90%;
-          background-color: transparent;
-          color: black;
-          outline: none;
-          margin-left: 8px; }
-    .custom-saber .contendor-form .grupo-button {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      margin-bottom: 10px; }
-      .custom-saber .contendor-form .grupo-button .btn-form {
-        margin: 0px 5px 5px 5px;
-        border-radius: 9px; }
-    .custom-saber .contendor-form input[type="date"]::-webkit-calendar-picker-indicator {
-      color: rgba(0, 0, 0, 0);
-      opacity: 0;
-      display: block;
-      width: 5px;
-      height: 5px;
-      border-width: thin; }
-    .custom-saber .contendor-form input[type="file"]::-webkit-file-upload-button {
-      color: white;
-      border-radius: 5px;
-      background-color: #0d6efd;
-      border: none;
-      margin: 0;
-      padding: .375rem .75rem; }
-
-.modal-content-custom {
-  border: none;
-  background-color: transparent; }
-  .modal-content-custom .modal-header-custom {
-    background-color: #803131;
-    border: none;
-    border-radius: 20px 20px 0px 0px;
-    text-align: center; }
-    .modal-content-custom .modal-header-custom .modal-title-custom {
-      color: white; }
-  .modal-content-custom .modal-body-custom {
-    background: linear-gradient(147deg, #423e3e 0%, #5c2838 100%); }
-    .modal-content-custom .modal-body-custom .tablaPersonaje {
-      width: 100%; }
-    .modal-content-custom .modal-body-custom .tablaCustomPersonaje {
-      width: 100%; }
-      .modal-content-custom .modal-body-custom .tablaCustomPersonaje .tablaPersonaje-foto {
-        text-align: center; }
-      .modal-content-custom .modal-body-custom .tablaCustomPersonaje .th-custom {
-        color: white;
-        font-size: 1rem; }
-      .modal-content-custom .modal-body-custom .tablaCustomPersonaje .td-custom {
-        color: #c9c8c8;
-        font-size: 1rem; }
-    .modal-content-custom .modal-body-custom .contenedor-sable-laser {
-      /* background: linear-gradient(147deg, #423e3e 0%, #5c2838 100%); */
-      display: inline-block;
+    line-height: 3.9;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 0px 0px 10px black; }
+    .circular-menu .floating-btn:active {
+      box-shadow: 0px 0px 10px black; }
+    .circular-menu .floating-btn .floating-btn-icon {
+      transition: transform .2s;
+      vertical-align: middle;
       position: relative;
-      left: 167px;
-      /* box-shadow: 0px 0px 17px black; */
-      /* justify-content: center; */
-      height: 500px; }
-      .modal-content-custom .modal-body-custom .contenedor-sable-laser .sable-laser {
-        height: 400px;
-        width: 70px;
-        margin: 0 40px; }
-        .modal-content-custom .modal-body-custom .contenedor-sable-laser .sable-laser .contenedor-mango {
-          position: absolute;
-          top: 288px;
-          z-index: 2;
-          cursor: pointer; }
-        .modal-content-custom .modal-body-custom .contenedor-sable-laser .sable-laser .contenedor-luz {
-          background-color: white;
-          height: 300px;
-          width: 8px;
-          border-radius: 7px 7px 0 0;
-          z-index: 1;
-          margin-left: -1%;
-          display: none;
-          position: relative;
-          top: 40px;
-          left: 17px;
-          transform: scaleY(0);
-          transition: .3s;
-          transform-origin: bottom; }
-  .modal-content-custom .modal-footer-custom {
-    background-color: #803131;
-    border: none;
-    border-radius: 0px 0px 20px 20px; }
-    .modal-content-custom .modal-footer-custom .btn-modal-custom {
-      background-color: #5d5858;
+      top: -3px;
+      left: 0px; }
+  .circular-menu.active.floating-btn .floating-btn-icon {
+    transform: rotate(-45deg); }
+  .circular-menu.active:after {
+    transform: scale3d(5.5, 5.5, 1);
+    transition-timing-function: cubic-bezier(0.68, 1.55, 0.265, 1);
+    box-shadow: 0px 0px 10px black; }
+  .circular-menu.active.menu-item {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .circular-menu:after {
+    display: block;
+    content: ' ';
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    background-color: #b0938b;
+    transition: all .3s ease;
+    box-shadow: 0px 0px 10px black; }
+  .circular-menu .items-wrapper {
+    padding: 0;
+    margin: 0; }
+    .circular-menu .items-wrapper .menu-item {
+      position: absolute;
+      top: .2em;
+      right: .2em;
+      z-index: -1;
+      display: block;
+      text-decoration: none;
       color: white;
-      box-shadow: 0px 0px 6px black; }
+      font-size: 1em;
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 3;
+      box-shadow: 0px 0px 10px black;
+      transition: transform .3s ease, background .2s ease; }
+      .circular-menu .items-wrapper .menu-item:hover {
+        background-color: rgba(0, 0, 0, 0.308); }
+      .circular-menu .items-wrapper .menu-item .menu-item-img-icon {
+        position: relative;
+        top: -4px;
+        left: 0px;
+        color: black; }
 
-/* Parte de los sables */
-/* Fin parte delos sables */
-@media (max-width: 460px) {
-  .contenedor-titulo {
-    width: 100%; }
+.circular-menu.active .menu-item:nth-child(1) {
+  transform: translate3d(1em, -7em, 0); }
 
-  .contendor-form {
-    width: 100%; } }
+.circular-menu.active .menu-item:nth-child(2) {
+  transform: translate3d(-3.5em, -6.3em, 0); }
+
+.circular-menu.active .menu-item:nth-child(3) {
+  transform: translate3d(-6.5em, -3.2em, 0); }
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-7em, 1em, 0); }
+
+.circular-menu.active .menu-item:nth-child(5) {
+  transform: translate3d(-1em, -3em, 0); }
+
+/**
+   * The other theme for this menu
+   */
+.circular-menu.circular-menu-left {
+  right: auto;
+  left: 1em;
+  z-index: 100; }
+  .circular-menu.circular-menu-left:after {
+    background-color: #b0938b; }
+  .circular-menu.circular-menu-left .floating-btn {
+    background-color: #974ea5;
+    box-shadow: 0px 0px 10px black; }
+  .circular-menu.circular-menu-left.active .floating-btn .floating-btn-icon {
+    transform: rotate(90deg); }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+    transform: translate3d(0em, -7.5em, 0); }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+    transform: translate3d(3.2em, -6.7em, 0); }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+    transform: translate3d(7.5em, 1em, 0); }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+    transform: translate3d(7em, -2em, 0); }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(5) {
+    transform: translate3d(5.7em, -4.7em, 0); }
+
+/* Fin estilos menu */
+@media (min-width: 600px) {
+  .circular-menu {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
