@@ -1,0 +1,98 @@
+
+
+.card-nave {
+    background: white;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    
+}
+
+.card-nave-image {
+    position: relative;
+    height: 230px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.card-nave-image--caza-estelar {
+    background: rgb(43, 41, 82);
+    background: linear-gradient(30deg, rgba(43, 41, 82, 1) 0%, rgba(64, 64, 219, 1) 44%, rgba(44, 193, 166, 1) 100%);
+}
+
+.card-nave-image--caza-estelar img {
+    width: 90%;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+}
+
+.card-nave-image--halcon {
+    background: rgb(69, 41, 82);
+    background: linear-gradient(27deg, rgba(69, 41, 82, 1) 0%, rgba(219, 64, 153, 1) 44%, rgba(193, 106, 44, 1) 100%);
+}
+
+.card-nave-image--halcon img {
+    width: 90%;
+    position: absolute;
+    top: 14%;
+    left: 4%;
+}
+
+.card-nave-image--xwing {
+    background: rgb(70, 92, 69);
+    background: linear-gradient(27deg, rgba(70, 92, 69, 1) 0%, rgba(42, 92, 69, 1) 50%, rgba(57, 177, 71, 1) 100%);
+}
+
+.card-nave-image--xwing img {
+    width: 90%;
+    position: absolute;
+    top: 14%;
+    left: 4%;
+}
+
+
+.card-nave-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card-nave-description {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 14px;
+    height: 340px;
+    color: #686868;
+}
+
+.card-nave-footer-caza {
+    background: #0054c7;
+}
+
+.card-nave-footer-halcon {
+    background: #EE5487;
+}
+
+
+.card-nave-footer-wing {
+    background: #317c45;
+}
+
+
+.card-nave-footer--goblin {
+    background: #82BB30;
+}
+
+.card-nave-footer {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 57px;
+}
