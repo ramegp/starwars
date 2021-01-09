@@ -758,7 +758,7 @@ section {
 /* =================== Fin custom personaje formulario */
 .contenedor {
   position: relative;
-  width: 100%;
+  width: 99%;
   height: 530px;
   display: flex;
   align-items: center;

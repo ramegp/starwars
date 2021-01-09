@@ -45,7 +45,7 @@
 @mixin ponerSables() {
     .contenedor {
         position: relative;
-        @include width-heigth(100%, 530px);
+        @include width-heigth(99%, 530px);
         @include displayAlignJustify(flex, center, center);
 
         .titulo {
