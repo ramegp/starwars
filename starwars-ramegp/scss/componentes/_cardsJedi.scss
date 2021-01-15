@@ -1,0 +1,116 @@
+@import "../base/colors";
+
+
+.card-circle {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0) 13%, rgba(0, 159, 255, 1) 100%);
+    transition: all 500ms ease-in;
+    transition-delay: .3s;
+    margin: auto;
+    margin-top: 10px;
+
+
+    &:hover {
+        width: 500px;
+        border-radius: 100px 10px 100px 100px;
+        transition: all 1s ease-out;
+
+        .card-circle-desplegable {
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s ease-out;
+            transition-delay: 1s;
+        }
+    }
+
+    .card-circle-portada {
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            float: left;
+            border: 3px solid #cfcdcd;
+        }
+    }
+
+    .card-circle-desplegable {
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden;
+        text-overflow: hidden;
+
+        .card-circle-desplegable-nombre {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .card-circle-desplegable-descripcion {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
+
+.card-circle-bg-blue {
+    background: $bg-card-jedi-blue;
+}
+
+.card-circle-bg-green {
+    background: $bg-card-jedi-green;
+}
+
+.card-circle-bg-yellow {
+    background: $bg-card-jedi-yellow;
+}
+
+.card-circle-bg-orange {
+    background: $bg-card-jedi-orange;
+}
+.cards-contenedor-jedi{
+    display: flex;
+}
+@media (max-width:500px) {
+    .card-circle {
+        /* width: 150px;
+        height: 150px; */
+
+        &:hover {
+            width: 90%;
+            height: 500px;
+            border-radius: 100px 10px 100px 100px;
+            transition: all 1s ease-out;
+            flex-direction: column;
+        }
+
+        .card-circle-desplegable {
+            padding-top: 14px;
+
+            .card-circle-desplegable-nombre {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .card-circle-desplegable-descripcion {
+                text-align: center;
+            }
+        }
+
+        .card-circle-portada {
+            img {
+                /* width: 150px;
+                height: 150px; */
+            }
+        }
+    }
+    .cards-contenedor-jedi{
+        display: list-item;
+    }
+}
