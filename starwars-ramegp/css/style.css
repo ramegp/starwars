@@ -1120,6 +1120,176 @@ section {
   border-bottom-right-radius: 14px;
   height: 57px; }
 
+.card-movie {
+  position: relative;
+  display: block;
+  width: 755px;
+  height: 350px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s; }
+  .card-movie:hover {
+    transform: scale(1.02);
+    transition: all 0.4s; }
+  .card-movie .card-movie-information {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px; }
+    .card-movie .card-movie-information .card-movie-information-header {
+      position: relative;
+      padding: 25px;
+      height: 40%; }
+      .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-titulo {
+        color: #fff;
+        font-weight: 900;
+        font-size: 32px; }
+      .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-subtitulo {
+        color: #9ac7fa;
+        font-weight: 400;
+        font-size: 24px; }
+      .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-minutes {
+        display: inline-block;
+        margin-top: 10px;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.13); }
+      .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-genero {
+        display: inline-block;
+        color: #cee4fd;
+        margin-left: 10px; }
+      .card-movie .card-movie-information .card-movie-information-header .locandina {
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        height: 120px;
+        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px; }
+    .card-movie .card-movie-information .card-movie-information-description {
+      padding: 50px 25px;
+      height: 50%; }
+      .card-movie .card-movie-information .card-movie-information-description .card-movie-information-description-text {
+        color: #cfd6e1;
+        font-size: 13px; }
+
+.card-movie-information-header-data {
+  display: inline-block; }
+
+#card-movie-episodio-07:hover {
+  box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.5); }
+
+.episodio-07 {
+  background: url("../../img/peliculas/episodio-007-exp.jpg");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: -173px;
+  background-size: cover;
+  border-radius: 11px; }
+
+#card-movie-episodio-08:hover {
+  box-shadow: 0px 0px 40px rgba(8, 231, 231, 0.5); }
+
+.episodio-08 {
+  /* background: url("../../img/peliculas/episodio-008-exp.jpg"); */
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  left: 336px;
+  background-size: cover;
+  border-radius: 11px; }
+
+#card-movie-episodio-09:hover {
+  box-shadow: 0px 0px 40px rgba(255, 217, 0, 0.699); }
+
+.episodio-09 {
+  background: url("../../img/peliculas/episodio-009-exp.jpg.jpg");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  left: 340px;
+  background-size: cover;
+  border-radius: 11px; }
+
+@media screen and (min-width: 766px) {
+  .card-movie-information-header {
+    width: 60%; }
+
+  .card-movie-information-description {
+    width: 50%; }
+
+  .card-movie-information {
+    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%); }
+
+  .card-movie-back {
+    width: 80%;
+    background-position: -100% 10%; } }
+@media screen and (max-width: 768px) {
+  .card-movie {
+    width: 80%;
+    margin: 70px auto;
+    height: 500px; }
+    .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-titulo {
+      font-size: 24px;
+      color: black; }
+    .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-subtitulo {
+      color: #000000;
+      font-weight: 900;
+      font-size: 16px; }
+    .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-minutes {
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.651);
+      background-color: rgba(255, 235, 205, 0.493); }
+    .card-movie .card-movie-information .card-movie-information-header .card-movie-information-header-genero {
+      font-weight: bolder;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.651);
+      background-color: rgba(255, 235, 205, 0.493);
+      border-radius: 5px;
+      padding: 5px; }
+    .card-movie .card-movie-information .card-movie-information-description {
+      width: 100%; }
+      .card-movie .card-movie-information .card-movie-information-description .card-movie-information-description-text {
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 12px; }
+
+  .card-movie-information-header {
+    width: 100%; }
+
+  .episodio-07 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    left: -160px;
+    background-size: cover;
+    border-radius: 11px; }
+
+  .episodio-08 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    left: -70px;
+    background-size: cover;
+    border-radius: 11px; }
+
+  .episodio-09 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    left: -125px;
+    background-size: cover;
+    border-radius: 11px; } }
 /* ===================== Sables ======================== */
 /* ==================== Fin Sables ======================== */
 /* ==================== PopUp ============================== */
