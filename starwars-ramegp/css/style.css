@@ -754,6 +754,86 @@ section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 /* =================================== Fin overlay ========================= */
+.card-circle {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: linear-gradient(121deg, rgba(255, 255, 255, 0) 13%, #009fff 100%);
+  transition: all 500ms ease-in;
+  transition-delay: .3s;
+  margin: auto;
+  margin-top: 10px; }
+  .card-circle:hover {
+    width: 500px;
+    border-radius: 100px 10px 100px 100px;
+    transition: all 1s ease-out; }
+    .card-circle:hover .card-circle-desplegable {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s ease-out;
+      transition-delay: 1s; }
+  .card-circle .card-circle-portada img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    border: 3px solid #cfcdcd; }
+  .card-circle .card-circle-desplegable {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: hidden; }
+    .card-circle .card-circle-desplegable .card-circle-desplegable-nombre {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold; }
+    .card-circle .card-circle-desplegable .card-circle-desplegable-descripcion {
+      text-align: center;
+      font-size: 14px; }
+
+.card-circle-bg-blue {
+  background: linear-gradient(30deg, #2b2952 0%, #4040db 44%, #35a893 100%); }
+
+.card-circle-bg-green {
+  background: linear-gradient(30deg, #43e922 0%, #17b312 44%, #5f8b0d 100%); }
+
+.card-circle-bg-yellow {
+  background: linear-gradient(30deg, #e2e61f 0%, #b69d10 44%, #f0e007 100%); }
+
+.card-circle-bg-orange {
+  background: linear-gradient(30deg, #ff6a13 0%, #d14d4d 44%, #da7a35 100%); }
+
+.cards-contenedor-jedi {
+  display: flex; }
+
+@media (max-width: 500px) {
+  .card-circle {
+    /* width: 150px;
+    height: 150px; */ }
+    .card-circle:hover {
+      width: 90%;
+      height: 500px;
+      border-radius: 100px 10px 100px 100px;
+      transition: all 1s ease-out;
+      flex-direction: column; }
+    .card-circle .card-circle-desplegable {
+      padding-top: 14px; }
+      .card-circle .card-circle-desplegable .card-circle-desplegable-nombre {
+        text-align: center;
+        font-size: 30px; }
+      .card-circle .card-circle-desplegable .card-circle-desplegable-descripcion {
+        text-align: center; }
+    .card-circle .card-circle-portada img {
+      /* width: 150px;
+      height: 150px; */ }
+
+  .cards-contenedor-jedi {
+    display: list-item; } }
 /* ===================== Sables ======================== */
 /* ==================== Fin Sables ======================== */
 /* ==================== PopUp ============================== */
