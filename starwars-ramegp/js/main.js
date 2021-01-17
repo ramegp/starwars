@@ -22,13 +22,15 @@ let sable6 = document.getElementById('sable6');
 let mango6 = document.getElementById('mango6');
 var flag6 = false;
 
-let titulo1 = document.getElementById('titulo1')
-let titulo2 = document.getElementById('titulo2')
-let titulo3 = document.getElementById('titulo3')
+let titulo1 = document.getElementById('titulo1');
+let titulo2 = document.getElementById('titulo2');
+let titulo3 = document.getElementById('titulo3');
+let titulo4 = document.getElementById('titulo4');
+let titulo5 = document.getElementById('titulo5');
+let titulo6 = document.getElementById('titulo6');
 
 
-
-var tiempo = 3000;
+var tiempo = 1500;
 
 let dataInformacion = document.getElementById('dataInformacionMaul')
 let btnMaul = document.getElementById('btnMaul');
@@ -62,23 +64,7 @@ btnCerrarPopup.addEventListener('click', function () {
 
 });
 
-
-// btnVader.addEventListener('click', function () {
-
-//     if (!presionadoVader) {
-//         dataInformacionVader.style.display = 'block';
-//         presionadoVader = true
-//     } else {
-//         dataInformacionVader.style.display = 'none';
-//         presionadoVader = false
-//     }
-
-// });
-
-// closeVader.addEventListener('click', function () {
-//     dataInformacionVader.style.display = 'none';
-//     presionadoVader = false
-// })
+/* ================= menu */
 let iconMenu = document.getElementById('toggle-icon');
 let navContainer = document.getElementById('nav-container');
 var menuPresionado = false;
@@ -94,19 +80,6 @@ iconMenu.addEventListener('click', function () {
     }
 })
 
-
-
-// window.addEventListener('click',function (e) {
-//     if(e.target != menu ){
-//         navContainer.classList.remove('pushed')
-//         menuPresionado = false;
-//     }
-// })
-
-// $(".toggle-icon").click(function() {
-//     $('#nav-container').toggleClass("pushed");
-//   });
-
 // ===================================================== Sables Laser =====================================================================
 
 function apagarTitulo(titulo) {
@@ -116,12 +89,13 @@ function apagarTitulo(titulo) {
 
 
 mango1.addEventListener('click', function () {
-     sonar();
+
      if (!flag1) {
          sable1.style.transform = 'scaleY(1)';
-         titulo3.style.opacity = '1'
+         titulo3.style.opacity = '1';
          flag1 = true;
         parar = setTimeout("apagarTitulo(titulo3)", tiempo);
+        sonar(v1,sound1);
      } else {
          sable1.style.transform = 'scaleY(0)';
          titulo3.style.opacity = '0'
@@ -133,12 +107,12 @@ mango1.addEventListener('click', function () {
 
 mango2.addEventListener('click', function () {
 
-    sonar();
     if (!flag2) {
         sable2.style.transform = 'scaleY(1)';
-        titulo2.style.opacity = '1'
+        titulo2.style.opacity = '1';
         flag2 = true;
         parar = setTimeout("apagarTitulo(titulo2)", tiempo);
+        sonar(v2,sound2);
     } else {
         sable2.style.transform = 'scaleY(0)';
         titulo2.style.opacity = '0'
@@ -150,67 +124,91 @@ mango2.addEventListener('click', function () {
 
 mango3.addEventListener('click', function () {
 
-    sonar();
+    
     if (!flag3) {
         sable3.style.transform = 'scaleY(1)';
         flag3 = true;
+        titulo6.style.opacity = '1';
+        parar = setTimeout("apagarTitulo(titulo6)", tiempo);
+        sonar(v3,sound3);
     } else {
         sable3.style.transform = 'scaleY(0)';
         flag3 = false;
+        titulo6.style.opacity = '0';
+        clearTimeout(parar);
     }
 
 })
 
 mango4.addEventListener('click', function () {
 
-    sonar();
+ 
     if (!flag4) {
         sable4.style.transform = 'scaleY(1)';
         flag4 = true;
+        titulo5.style.opacity = '1';
+        parar = setTimeout("apagarTitulo(titulo5)", tiempo);
+        sonar(v4,sound4);
     } else {
         sable4.style.transform = 'scaleY(0)';
         flag4 = false;
+        titulo5.style.opacity = '0';
+        clearTimeout(parar);
     }
 
 })
 
 mango5.addEventListener('click', function () {
 
-    sonar();
     if (!flag5) {
         sable5.style.transform = 'scaleY(1)';
-
         flag5 = true;
+        titulo4.style.opacity = '1';
+        parar = setTimeout("apagarTitulo(titulo4)", tiempo);
+        sonar(v5,sound5);
     } else {
         sable5.style.transform = 'scaleY(0)';
         flag5 = false;
+        titulo4.style.opacity = '0';
+        clearTimeout(parar);
+        
     }
 
 })
-var v = document.getElementsByTagName("audio")[0];
-var sound = false; // boolean por cada sable que haga ruido
+var v1 = document.getElementsByTagName("audio")[0];
+var v2 = document.getElementsByTagName("audio")[0];
+var v3 = document.getElementsByTagName("audio")[0];
+var v4 = document.getElementsByTagName("audio")[0];
+var v5 = document.getElementsByTagName("audio")[0];
+var v6 = document.getElementsByTagName("audio")[0];
 
-//voy a necesitar un boolean por cada sable
-function sonar() {
-    if (!sound) {
-        v.play();
-        sound = true;
+var sound1 = false; // boolean por cada sable que haga ruido
+var sound2 = false;
+var sound3 = false;
+var sound4 = false;
+var sound5 = false;
+var sound6 = false;
+
+function sonar(audio,prendido) {
+    if (!prendido) {
+        audio.play();
+        prendido = true;
     } else {
-        v.pause();
-        v.currentTime = 0;
-        sound = false;
+        audio.pause();
+        audio.currentTime = 0;
+        prendido = false;
     }
 }
 
 mango6.addEventListener('click', function () {
 
-    sonar();
 
     if (!flag6) {
         sable6.style.transform = 'scaleY(1)';
         titulo1.style.opacity = '1'
         flag6 = true;
         parar = setTimeout("apagarTitulo(titulo1)", tiempo); // guardamos en una variable para poder frenar el contador cuando se apaga//  
+        sonar(v6,sound6);
     } else {
         sable6.style.transform = 'scaleY(0)';
         titulo1.style.opacity = '0';
