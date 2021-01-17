@@ -1364,11 +1364,11 @@ body {
     .droid {
       left: 15%;
       top: 22%;
-      transform: scale(0.7);
+      transform: scale(0.5);
     }
     #container{
       left: -12em;
-      transform: scale(0.6);
+      transform: scale(0.4);
     }
 }
 
