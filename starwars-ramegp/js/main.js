@@ -32,17 +32,10 @@ let titulo6 = document.getElementById('titulo6');
 
 var tiempo = 1500;
 
-let dataInformacion = document.getElementById('dataInformacionMaul')
-let btnMaul = document.getElementById('btnMaul');
-let closeMaul = document.getElementById('close');
 
-let dataInformacionVader = document.getElementById('dataInformacionVader')
-let btnVader = document.getElementById('btnVader');
-let closeVader = document.getElementById('closeVader');
 
-let overlay = document.getElementById('overlay');
-let popup = document.getElementById('popup');
-let btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+
+
 
 var presionadoMaul = false;
 var presionadoVader = false;
@@ -50,19 +43,6 @@ var presionadoVader = false;
 
 
 //============================================== Ventana informacion ===========================================================
-
-/* btnMaul.addEventListener('click', function () {
-    overlay.classList.add('active');
-    popup.classList.add('active');
-    
-});
-
-btnCerrarPopup.addEventListener('click', function () {
-    overlay.classList.remove('active');
-    popup.classList.remove('active');
-
-
-}); */
 
 /* ================= menu */
 let iconMenu = document.getElementById('toggle-icon');
