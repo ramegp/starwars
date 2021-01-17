@@ -25,7 +25,7 @@
 
 body {
     background: #141414;
-    min-width: 30em;
+    /* min-width: 30em; */
     height: 100vh;
     min-height: 8em;
     position: relative;
@@ -1362,13 +1362,13 @@ body {
 /* Fin BB8 Cuerpo Animaciones */
 @media only screen and (min-width:200px) and (max-width: 570px) {
     .droid {
-      left: 15%;
+      left: 36%;
       top: 22%;
-      transform: scale(0.5);
+      transform: scale(0.8);
     }
     #container{
-      left: -12em;
-      transform: scale(0.4);
+      left: 0%;
+      transform: scale(0.6);
     }
 }
 
