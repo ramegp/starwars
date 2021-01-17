@@ -492,7 +492,7 @@ section {
     font-size: 1.7rem; } }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .section-titulo {
-    font-size: 3rem; } }
+    font-size: 2.7rem; } }
 /* ===================== Sables ======================== */
 /* ==================== Fin Sables ======================== */
 /* ==================== PopUp ============================== */
@@ -533,6 +533,7 @@ section {
     font-size: 26px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 10px;
     color: rgba(0, 0, 0, 0.966); }
   .resume .cronologia-sith-item {
     padding: 0 0 20px 20px;
@@ -610,152 +611,6 @@ section {
     box-shadow: 0px 0px 18px 14px rgba(0, 0, 0, 0.4); }
 
 /*============================ Fin Frases de Personajes =============================== */
-/* =========================== Creacion del Arbol de fotos ===================== */
-.item-arbol {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border: 4px solid #ecd8d8;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px 8px black;
-  margin-top: 27px; }
-  .item-arbol:hover .informacion-personaje {
-    opacity: 1; }
-  .item-arbol .informacion-personaje {
-    background-color: rgba(128, 128, 128, 0.486);
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0; }
-    .item-arbol .informacion-personaje .nombre-personaje {
-      font-size: 1rem;
-      color: white; }
-      .item-arbol .informacion-personaje .nombre-personaje input.btn2 {
-        background-color: rgba(230, 77, 77, 0.808);
-        width: auto;
-        height: 1.5rem;
-        border: none;
-        border-radius: 8px;
-        padding: 2px 4px; }
-
-/* =========================== Cargar Imagenes Del Arbol ================== */
-/* dentro del diccionario $personajes-url se encuentra el nombre del personaje con su respectiva ubicacion de la foto */
-.personajeMaul {
-  background-image: url("../img/personajes/darthMaul.jpg");
-  background-size: cover; }
-
-.personajeVaderD {
-  background-image: url("../img/personajes/darthVader2.jpg");
-  background-size: cover; }
-
-.personajeKyloR {
-  background-image: url("../img/personajes/kylo.png");
-  background-size: cover; }
-
-.personajeDoku {
-  background-image: url("../img/personajes/kylo.png");
-  background-size: cover; }
-
-.personajePalpatineSith {
-  background-image: url("../img/personajes/darthSidious.jpg");
-  background-size: cover; }
-
-.personajePlageriusSith {
-  background-image: url("../img/personajes/plagueis.jpg");
-  background-size: cover; }
-
-/* ============================= Fin cargar fotos */
-/* =================================== overlay ============================= */
-.overlay {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  transition: 1.3s linear all; }
-  .overlay.active {
-    display: flex;
-    visibility: visible;
-    animation-name: modalEntra;
-    animation-duration: 1.6s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-delay: 0s; }
-  .overlay .popup {
-    background: #ecd6d6ed;
-    box-shadow: 0px 0px 45px 30px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    text-align: center;
-    width: 60%;
-    transition: 1s linear all;
-    opacity: 0; }
-    .overlay .popup .btn-cerrar-popup {
-      font-size: 26px;
-      line-height: 16px;
-      display: block;
-      text-align: right;
-      transition: .8s ease all;
-      color: #8d8080;
-      cursor: pointer; }
-      .overlay .popup .btn-cerrar-popup:hover {
-        color: #000; }
-    .overlay .popup .overlay-popup-titulo {
-      font-size: 36px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      opacity: 0;
-      display: block;
-      color: black; }
-    .overlay .popup .overlay-popup-subtitulo {
-      font-size: 26px;
-      font-weight: 300;
-      margin-bottom: 40px;
-      opacity: 0;
-      display: block;
-      color: black; }
-    .overlay .popup.active {
-      opacity: 1; }
-      .overlay .popup.active .overlay-popup-titulo {
-        animation-name: entradaTitulo;
-        animation-duration: 1.3s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease;
-        animation-delay: 1.6s; }
-      .overlay .popup.active .overlay-popup-subtitulo {
-        animation-name: entradaSubtitulo;
-        animation-duration: 1.3s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease;
-        animation-delay: 1.6s; }
-    .overlay .popup .texto {
-      display: block;
-      float: left;
-      width: 79%;
-      margin-right: 10px;
-      text-align: justify; }
-
-.tablaPersonaje {
-  border: 1px solid #b30707;
-  border-spacing: 0px;
-  float: left; }
-  .tablaPersonaje tbody .tablaPersonaje-foto img {
-    width: 200px;
-    height: auto; }
-  .tablaPersonaje tbody th {
-    text-align: center;
-    border: 1px solid #b30707;
-    padding: 0.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  .tablaPersonaje tbody td {
-    text-align: center;
-    border: 1px solid #b30707;
-    padding: 0.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-
-/* =================================== Fin overlay ========================= */
 .card-circle {
   display: flex;
   height: 200px;
@@ -1480,7 +1335,7 @@ section {
     margin-bottom: 0;
     color: black; }
 
-@media (min-width: 400px) {
+@media (min-width: 499px) {
   .linea-temporal:before {
     left: 50%;
     background-color: yellow; }
@@ -1490,7 +1345,7 @@ section {
     .linea-temporal > li .linea-temporal-panel {
       float: left;
       width: 41%;
-      padding: 0 20px 20px 30px;
+      padding: 0 30px 20px 30px;
       text-align: right; }
     .linea-temporal > li .linea-temporal-imagen {
       left: 50%;
@@ -1503,7 +1358,7 @@ section {
         margin-top: 16px; }
   .linea-temporal > li.linea-temporal-inverted > .linea-temporal-panel {
     float: right;
-    padding: 0 30px 20px 20px;
+    padding: 0 30px 20px 30px;
     text-align: left; } }
 @media (min-width: 960px) {
   .linea-temporal > li {
