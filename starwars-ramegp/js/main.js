@@ -51,10 +51,10 @@ var presionadoVader = false;
 
 //============================================== Ventana informacion ===========================================================
 
-btnMaul.addEventListener('click', function () {
+/* btnMaul.addEventListener('click', function () {
     overlay.classList.add('active');
     popup.classList.add('active');
-    // sonar()
+    
 });
 
 btnCerrarPopup.addEventListener('click', function () {
@@ -62,7 +62,7 @@ btnCerrarPopup.addEventListener('click', function () {
     popup.classList.remove('active');
 
 
-});
+}); */
 
 /* ================= menu */
 let iconMenu = document.getElementById('toggle-icon');
