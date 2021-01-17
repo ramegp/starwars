@@ -121,7 +121,7 @@
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 499px) {
 	.linea-temporal {
 		&:before {
 			left: 50%;
@@ -133,7 +133,7 @@
 			.linea-temporal-panel {
 				float: left;
 				width: 41%;
-				padding: 0 20px 20px 30px;
+				padding: 0 30px 20px 30px;
 				text-align: right;
 			}
 			.linea-temporal-imagen {
@@ -150,7 +150,7 @@
 		>li.linea-temporal-inverted {
 			>.linea-temporal-panel {
 				float: right;
-				padding: 0 30px 20px 20px;
+				padding: 0 30px 20px 30px;
 				text-align: left;
 			}
 		}
